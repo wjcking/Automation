@@ -1,0 +1,138 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{314921B8-4023-43AA-B122-5B06E95E8C85}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Sinowyde.DOP.GraphicElement.Base</RootNamespace>
+    <AssemblyName>Sinowyde.DOP.GraphicElement.Base</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Data.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.Utils.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.XtraEditors.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="NCalc">
+      <HintPath>..\packages\NCalc\NCalc.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft.Json.8.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Northwoods.Go">
+      <HintPath>..\..\..\Common\ThirdParty\GoDiagram\Northwoods.Go.dll</HintPath>
+    </Reference>
+    <Reference Include="Northwoods.Go.Draw, Version=5.1.0.45, Culture=neutral, PublicKeyToken=a4e3b7b70161cfe8, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Common\ThirdParty\GoDiagram\Northwoods.Go.Draw.dll</HintPath>
+    </Reference>
+    <Reference Include="Northwoods.Go.Instruments">
+      <HintPath>..\..\..\Common\ThirdParty\GoDiagram\Northwoods.Go.Instruments.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.Composition" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Action\ActionExpression.cs" />
+    <Compile Include="Action\GraphActionDefine.cs" />
+    <Compile Include="Action\GraphColorActionDefine.cs" />
+    <Compile Include="Action\GraphFlashActionDefine.cs" />
+    <Compile Include="Action\GraphHideActionDefine.cs" />
+    <Compile Include="Action\GraphMoveActionDefine.cs" />
+    <Compile Include="Action\GraphTextActionDefine.cs" />
+    <Compile Include="DOPBarMeters.cs" />
+    <Compile Include="DOPGaugeMeters.cs" />
+    <Compile Include="DOPGraphElement.cs" />
+    <Compile Include="FrmGraphParam.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmGraphParam.Designer.cs">
+      <DependentUpon>FrmGraphParam.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GraphElementTool.cs" />
+    <Compile Include="GraphRunTime.cs" />
+    <Compile Include="ICtrlParamBase.cs" />
+    <Compile Include="MefFramkGraph.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="FrmGraphParam.resx">
+      <DependentUpon>FrmGraphParam.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Common\Solution\Sinowyde.DataModel\Sinowyde.DataModel.csproj">
+      <Project>{aa3d8e8d-312a-4075-89cb-09822e75f75f}</Project>
+      <Name>Sinowyde.DataModel</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Common\Solution\Sinowyde.Log\Sinowyde.Log.csproj">
+      <Project>{2ba2df95-0d3c-4fb4-8d0a-fce6c742fb82}</Project>
+      <Name>Sinowyde.Log</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Common\Solution\Sinowyde.RtModel\Sinowyde.RTModel.csproj">
+      <Project>{770f76df-a232-40ce-9353-ddbd67669d3e}</Project>
+      <Name>Sinowyde.RTModel</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Common\Solution\Sinowyde.Util\Sinowyde.Util.csproj">
+      <Project>{529550d8-4877-434a-83ce-4eeb1f6b1f9c}</Project>
+      <Name>Sinowyde.Util</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Sinowyde.DOP.DataModel.Control\Sinowyde.DOP.DataModel.Control.csproj">
+      <Project>{7c2d4c81-4860-4a16-b6a5-cf46b135a22b}</Project>
+      <Name>Sinowyde.DOP.DataModel.Control</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Sinowyde.DOP.DataModel\Sinowyde.DOP.DataModel.csproj">
+      <Project>{433defaa-990d-470d-9751-959d594b5338}</Project>
+      <Name>Sinowyde.DOP.DataModel</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Sinowyde.DOP.DTProxy\Sinowyde.DOP.DTProxy.csproj">
+      <Project>{e95d2d7f-9972-4b2f-af56-85330ea82d42}</Project>
+      <Name>Sinowyde.DOP.DTProxy</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

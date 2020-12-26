@@ -1,0 +1,221 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{90380728-1682-45EA-9981-9165A75B494E}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Sinowyde.DOP.Graph</RootNamespace>
+    <AssemblyName>Sinowyde.DOP.Graph</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\Sinowyde.ConsoleApplication\bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Data.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.ExpressApp.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Persistent.Base.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Printing.v15.2.Core, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.Sparkline.v15.2.Core, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.Utils.v15.2.UI, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraBars.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.XtraEditors.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.XtraGrid.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.XtraPrinting.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.Office.v15.2.Core, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.RichEdit.v15.2.Core, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraReports.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraReports.v15.2.Extensions, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraRichEdit.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraTreeList.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraVerticalGrid.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="Newtonsoft.Json, Version=8.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Newtonsoft.Json.8.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Ninject, Version=3.2.0.0, Culture=neutral, PublicKeyToken=c7192dc5380945e7, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Common\ThirdParty\Ninject.3.2.2.0\lib\net45-full\Ninject.dll</HintPath>
+    </Reference>
+    <Reference Include="Northwoods.Go">
+      <HintPath>..\..\..\Common\ThirdParty\GoDiagram\Northwoods.Go.dll</HintPath>
+    </Reference>
+    <Reference Include="Northwoods.Go.Draw, Version=5.1.0.45, Culture=neutral, PublicKeyToken=a4e3b7b70161cfe8, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Common\ThirdParty\GoDiagram\Northwoods.Go.Draw.dll</HintPath>
+    </Reference>
+    <Reference Include="Northwoods.Go.Instruments, Version=5.1.0.45, Culture=neutral, PublicKeyToken=a4e3b7b70161cfe8, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Common\ThirdParty\GoDiagram\Northwoods.Go.Instruments.dll</HintPath>
+    </Reference>
+    <Reference Include="Northwoods.Go.Layout">
+      <HintPath>..\..\..\Common\ThirdParty\GoDiagram\Northwoods.Go.Layout.dll</HintPath>
+    </Reference>
+    <Reference Include="Northwoods.Go.Xml">
+      <HintPath>..\..\..\Common\ThirdParty\GoDiagram\Northwoods.Go.Xml.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.Composition" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FORMS\FrmFull.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORMS\FrmFull.Designer.cs">
+      <DependentUpon>FrmFull.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FORMS\frmNewDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORMS\frmNewDialog.Designer.cs">
+      <DependentUpon>frmNewDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FORMS\frmOpenDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORMS\frmOpenDialog.Designer.cs">
+      <DependentUpon>frmOpenDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GraphActionEnum.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="UCtlGraph.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCtlGraph.Designer.cs">
+      <DependentUpon>UCtlGraph.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCtlGraphRun.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCtlGraphRun.Designer.cs">
+      <DependentUpon>UCtlGraphRun.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="FORMS\FrmFull.resx">
+      <DependentUpon>FrmFull.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FORMS\frmNewDialog.resx">
+      <DependentUpon>frmNewDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FORMS\frmOpenDialog.resx">
+      <DependentUpon>frmOpenDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCtlGraph.resx">
+      <DependentUpon>UCtlGraph.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCtlGraphRun.resx">
+      <DependentUpon>UCtlGraphRun.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Common\Solution\Sinowyde.DataLogic\Sinowyde.DataLogic.csproj">
+      <Project>{b6d22f2a-e93c-4042-9636-c23524111452}</Project>
+      <Name>Sinowyde.DataLogic</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Common\Solution\Sinowyde.DataModel\Sinowyde.DataModel.csproj">
+      <Project>{aa3d8e8d-312a-4075-89cb-09822e75f75f}</Project>
+      <Name>Sinowyde.DataModel</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Common\Solution\Sinowyde.Log\Sinowyde.Log.csproj">
+      <Project>{2ba2df95-0d3c-4fb4-8d0a-fce6c742fb82}</Project>
+      <Name>Sinowyde.Log</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Common\Solution\Sinowyde.Util\Sinowyde.Util.csproj">
+      <Project>{529550d8-4877-434a-83ce-4eeb1f6b1f9c}</Project>
+      <Name>Sinowyde.Util</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Sinowyde.DOP.DataModel\Sinowyde.DOP.DataModel.csproj">
+      <Project>{433defaa-990d-470d-9751-959d594b5338}</Project>
+      <Name>Sinowyde.DOP.DataModel</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Sinowyde.DOP.DTProxy\Sinowyde.DOP.DTProxy.csproj">
+      <Project>{e95d2d7f-9972-4b2f-af56-85330ea82d42}</Project>
+      <Name>Sinowyde.DOP.DTProxy</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Sinowyde.DOP.Graph.DB\Sinowyde.DOP.Graph.DB.csproj">
+      <Project>{505ea738-653f-47a7-8492-f557533b209f}</Project>
+      <Name>Sinowyde.DOP.Graph.DB</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Sinowyde.DOP.Graph.Xml\Sinowyde.DOP.Graph.Xml.csproj">
+      <Project>{4c48dc39-ce98-4907-9a75-afd84fa29aae}</Project>
+      <Name>Sinowyde.DOP.Graph.Xml</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Sinowyde.DOP.GraphicElement.Base\Sinowyde.DOP.GraphicElement.Base.csproj">
+      <Project>{314921b8-4023-43aa-b122-5b06e95e8c85}</Project>
+      <Name>Sinowyde.DOP.GraphicElement.Base</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Sinowyde.DOP.GraphicElement\Sinowyde.DOP.GraphicElement.csproj">
+      <Project>{fe7f4914-ce03-4a10-93fa-91d4801faf3d}</Project>
+      <Name>Sinowyde.DOP.GraphicElement</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Sinowyde.DOP.UI\Sinowyde.DOP.UI.csproj">
+      <Project>{6f8df2ba-7bb4-4a6d-8fb3-7140712f938e}</Project>
+      <Name>Sinowyde.DOP.UI</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

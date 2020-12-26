@@ -1,0 +1,131 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Sinowyde.DOP.GraphicElement.Base.BarMeter" Collapsed="true">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAABAAABAAAAAAAAAAAIAAAAAAIAAAAAAAAAAAA=</HashCode>
+      <FileName>BarMeter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Sinowyde.DOP.GraphicElement.Base.ConditionActionExtend">
+    <Position X="4" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ConditionAction.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Sinowyde.DOP.GraphicElement.Base.ConditionAction" Collapsed="true">
+    <Position X="2.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgAAAAAEACAAAAAEAAAAAABAABAEAIQAAQAoAgAAAA=</HashCode>
+      <FileName>ConditionAction.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Sinowyde.DOP.GraphicElement.Base.DOPBarMeters" Collapsed="true">
+    <Position X="5.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAABAAABAAAAAAAAIAAIAgAAAQAAAAAAAAAAAAA=</HashCode>
+      <FileName>DOPBarMeters.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Sinowyde.DOP.GraphicElement.Base.DOPGaugeMeters">
+    <Position X="8" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAIABAAAAAAAQAAAABAAIAAAABEIAAAAAAAAAIAA=</HashCode>
+      <FileName>DOPGaugeMeters.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Sinowyde.DOP.GraphicElement.Base.DOPGraphElement" Collapsed="true">
+    <Position X="2.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAJAAAABIAACAEQIABQIBEAAAEAABoACAgEAAAAA=</HashCode>
+      <FileName>DOPGraphElement.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Sinowyde.DOP.GraphicElement.Base.FrmGraphParam" Collapsed="true">
+    <Position X="6" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAAACAQAAqgAEAAAAAAgAAABAAAAA=</HashCode>
+      <FileName>FrmGraphParam.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Sinowyde.DOP.GraphicElement.Base.GraphElementTool&lt;TElement, TShape&gt;" Collapsed="true">
+    <Position X="4" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAEAAAAAAAAAAAAAAAAAAAIAAAAAAAAJwAAAAAAAAA=</HashCode>
+      <FileName>GraphElementTool.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Sinowyde.DOP.GraphicElement.Base.GraphEditEventArgs" Collapsed="true">
+    <Position X="0.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>GraphRunTime.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Sinowyde.DOP.GraphicElement.Base.GraphRunTime">
+    <Position X="7.5" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAIAAAAAAAAAAgAAAAAAAAAABIEAAAQABAAAAAAAA=</HashCode>
+      <FileName>GraphRunTime.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Sinowyde.DOP.GraphicElement.Base.ExportGraphMetaDataAttribute" BaseTypeListCollapsed="true">
+    <Position X="5.75" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAAEAAAAAAAAAAAAAAAAQAAAgAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>MefFramkGraph.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="1.3" Collapsed="true" />
+  </Class>
+  <Interface Name="Sinowyde.DOP.GraphicElement.Base.ICtrlParamBase">
+    <Position X="0.5" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABAAAAAAAAAAAAgAAAABAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ICtrlParamBase.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Sinowyde.DOP.GraphicElement.Base.IGraphFactory">
+    <Position X="2.25" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>MefFramkGraph.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Sinowyde.DOP.GraphicElement.Base.IGraphMetaData">
+    <Position X="0.5" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAAEAAAAAAAAAAAAAAAAQAAAgAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>MefFramkGraph.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Enum Name="Sinowyde.DOP.GraphicElement.Base.ActionType">
+    <Position X="2.25" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAAAAAAAIAAAgAAEAAAAAAAAAAAAAAAkAAACAAYAAA=</HashCode>
+      <FileName>ConditionAction.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Sinowyde.DOP.GraphicElement.Base.LinkType">
+    <Position X="4" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAAAQAASAAAACAAAAAQAAAAAAAQAAAAgAAACAARAAA=</HashCode>
+      <FileName>ConditionAction.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Sinowyde.DOP.GraphicElement.Base.GraphDocStatus">
+    <Position X="5.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAAAAAAAAAAAAAAAAAAABAAIAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>GraphRunTime.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Delegate Name="Sinowyde.DOP.GraphicElement.Base.ChangeEdithRunTime">
+    <Position X="0.5" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAEAAAAAAA=</HashCode>
+      <FileName>GraphRunTime.cs</FileName>
+    </TypeIdentifier>
+  </Delegate>
+  <Font Name="Microsoft YaHei" Size="9" />
+</ClassDiagram>

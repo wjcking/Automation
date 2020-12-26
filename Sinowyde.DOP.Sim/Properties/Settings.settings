@@ -1,0 +1,18 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="Sinowyde.DOP.Sim.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="Topic" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">IORead</Value>
+    </Setting>
+    <Setting Name="Response" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">tcp://127.0.0.1:9001</Value>
+    </Setting>
+    <Setting Name="Publish" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">tcp://127.0.0.1:9003</Value>
+    </Setting>
+    <Setting Name="PubTopic" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Simulation</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

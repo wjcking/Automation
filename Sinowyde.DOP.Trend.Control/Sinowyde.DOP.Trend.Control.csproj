@@ -1,0 +1,188 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{661D78BD-3704-4A91-B9D0-EA702CC259D7}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Sinowyde.DOP.Trend.Control</RootNamespace>
+    <AssemblyName>Sinowyde.DOP.Trend.Control</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <PublishUrl>发布\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.BonusSkins.v15.2" />
+    <Reference Include="DevExpress.Charts.v15.2.Core, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Data.v15.2" />
+    <Reference Include="DevExpress.Printing.v15.2.Core, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v15.2" />
+    <Reference Include="DevExpress.Sparkline.v15.2.Core" />
+    <Reference Include="DevExpress.XtraBars.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraCharts.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraCharts.v15.2.Extensions, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v15.2.UI, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v15.2.Wizard, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraEditors.v15.2" />
+    <Reference Include="DevExpress.XtraGrid.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraPrinting.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ChartEx.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ChartEx.Designer.cs">
+      <DependentUpon>ChartEx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Code\ChartConfig.cs" />
+    <Compile Include="Code\ChartTimer.cs" />
+    <Compile Include="Code\ComBoxEx.cs" />
+    <Compile Include="Form\Form_Variable.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Form_Variable.Designer.cs">
+      <DependentUpon>Form_Variable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Code\ChartData.cs" />
+    <Compile Include="UserCtrlHisTrend.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserCtrlHisTrend.Designer.cs">
+      <DependentUpon>UserCtrlHisTrend.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserCtrlRtTrend.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserCtrlRtTrend.Designer.cs">
+      <DependentUpon>UserCtrlRtTrend.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="ChartEx.resx">
+      <DependentUpon>ChartEx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Form_Variable.resx">
+      <DependentUpon>Form_Variable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="UserCtrlHisTrend.resx">
+      <DependentUpon>UserCtrlHisTrend.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserCtrlRtTrend.resx">
+      <DependentUpon>UserCtrlRtTrend.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5 %28x86 和 x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Common\Solution\Sinowyde.DataLogic\Sinowyde.DataLogic.csproj">
+      <Project>{b6d22f2a-e93c-4042-9636-c23524111452}</Project>
+      <Name>Sinowyde.DataLogic</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Common\Solution\Sinowyde.DataModel\Sinowyde.DataModel.csproj">
+      <Project>{aa3d8e8d-312a-4075-89cb-09822e75f75f}</Project>
+      <Name>Sinowyde.DataModel</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Common\Solution\Sinowyde.Util\Sinowyde.Util.csproj">
+      <Project>{529550d8-4877-434a-83ce-4eeb1f6b1f9c}</Project>
+      <Name>Sinowyde.Util</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Sinowyde.DOP.DataLogic\Sinowyde.DOP.DataLogic.csproj">
+      <Project>{cc5aa595-01e0-485a-8d88-541c30755680}</Project>
+      <Name>Sinowyde.DOP.DataLogic</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Sinowyde.DOP.DataModel\Sinowyde.DOP.DataModel.csproj">
+      <Project>{433defaa-990d-470d-9751-959d594b5338}</Project>
+      <Name>Sinowyde.DOP.DataModel</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Sinowyde.DOP.DTProxy\Sinowyde.DOP.DTProxy.csproj">
+      <Project>{e95d2d7f-9972-4b2f-af56-85330ea82d42}</Project>
+      <Name>Sinowyde.DOP.DTProxy</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\loading.gif" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

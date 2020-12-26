@@ -1,0 +1,198 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A06DF608-FD30-4853-9529-CD6068F3B984}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Sinowyde.DOP.PIDBlock.Control</RootNamespace>
+    <AssemblyName>Sinowyde.DOP.PIDBlock.Control</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\Sinowyde.ConsoleApplication\bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Data.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.Utils.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.XtraEditors.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="Northwoods.Go">
+      <HintPath>..\..\..\Common\ThirdParty\GoDiagram\Northwoods.Go.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.Composition" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Blocks\AsetpointBlock.cs" />
+    <Compile Include="Blocks\DsetpointBlock.cs" />
+    <Compile Include="Blocks\LeadlegBlock.cs" />
+    <Compile Include="Blocks\MaexBlock.cs" />
+    <Compile Include="Blocks\PidexBlock.cs" />
+    <Compile Include="ParamCtrls\CtrlParamAsetpoint.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ParamCtrls\CtrlParamAsetpoint.Designer.cs">
+      <DependentUpon>CtrlParamAsetpoint.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ParamCtrls\CtrlParamDsetpoint.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ParamCtrls\CtrlParamDsetpoint.Designer.cs">
+      <DependentUpon>CtrlParamDsetpoint.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ParamCtrls\CtrlParamLeadleg.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ParamCtrls\CtrlParamLeadleg.Designer.cs">
+      <DependentUpon>CtrlParamLeadleg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ParamCtrls\CtrlParamMaex.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ParamCtrls\CtrlParamMaex.Designer.cs">
+      <DependentUpon>CtrlParamMaex.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ParamCtrls\CtrlParamPidex.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ParamCtrls\CtrlParamPidex.Designer.cs">
+      <DependentUpon>CtrlParamPidex.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Tools\AsetpointBlockTools.cs" />
+    <Compile Include="Tools\DsetpointBlockTools.cs" />
+    <Compile Include="Tools\LeadlegBlockTools.cs" />
+    <Compile Include="Tools\MaexBlockTools.cs" />
+    <Compile Include="Tools\PidexBlockTools.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Common\Solution\Sinowyde.DataModel\Sinowyde.DataModel.csproj">
+      <Project>{aa3d8e8d-312a-4075-89cb-09822e75f75f}</Project>
+      <Name>Sinowyde.DataModel</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Common\Solution\Sinowyde.Util\Sinowyde.Util.csproj">
+      <Project>{529550d8-4877-434a-83ce-4eeb1f6b1f9c}</Project>
+      <Name>Sinowyde.Util</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Sinowyde.DOP.DataModel\Sinowyde.DOP.DataModel.csproj">
+      <Project>{433defaa-990d-470d-9751-959d594b5338}</Project>
+      <Name>Sinowyde.DOP.DataModel</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Sinowyde.DOP.DTProxy\Sinowyde.DOP.DTProxy.csproj">
+      <Project>{e95d2d7f-9972-4b2f-af56-85330ea82d42}</Project>
+      <Name>Sinowyde.DOP.DTProxy</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Sinowyde.DOP.PIDAlgorithm.Control\Sinowyde.DOP.PIDAlgorithm.Control.csproj">
+      <Project>{5090e4a1-b850-490c-838e-c65b6829164b}</Project>
+      <Name>Sinowyde.DOP.PIDAlgorithm.Control</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Sinowyde.DOP.PIDAlgorithm\Sinowyde.DOP.PIDAlgorithm.csproj">
+      <Project>{d6326efc-eb44-4492-8ef7-7ae91768d78b}</Project>
+      <Name>Sinowyde.DOP.PIDAlgorithm</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Sinowyde.DOP.PIDBlock.UserCtrl\Sinowyde.DOP.PIDBlock.UserCtrl.csproj">
+      <Project>{42d59eee-9f04-423a-881f-a33b78762629}</Project>
+      <Name>Sinowyde.DOP.PIDBlock.UserCtrl</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Sinowyde.DOP.PIDBlock\Sinowyde.DOP.PIDBlock.csproj">
+      <Project>{5bd90716-dd9b-4ce6-8aff-22a51e71646a}</Project>
+      <Name>Sinowyde.DOP.PIDBlock</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ParamCtrls\CtrlParamAsetpoint.resx">
+      <DependentUpon>CtrlParamAsetpoint.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ParamCtrls\CtrlParamDsetpoint.resx">
+      <DependentUpon>CtrlParamDsetpoint.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ParamCtrls\CtrlParamLeadleg.resx">
+      <DependentUpon>CtrlParamLeadleg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ParamCtrls\CtrlParamMaex.resx">
+      <DependentUpon>CtrlParamMaex.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ParamCtrls\CtrlParamPidex.resx">
+      <DependentUpon>CtrlParamPidex.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DSET.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\control_aset_normal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\control_leadleg_normal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\control_pid-ex_normal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\control_ams-ex_normal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\control_ams-ex_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\control_aset_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\control_dset_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\control_leadleg_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\control_pid-ex_icon.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

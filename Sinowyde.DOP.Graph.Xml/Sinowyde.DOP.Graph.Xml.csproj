@@ -1,0 +1,117 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{4C48DC39-CE98-4907-9A75-AFD84FA29AAE}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Sinowyde.DOP.Graph.Xml</RootNamespace>
+    <AssemblyName>Sinowyde.DOP.Graph.Xml</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Iesi.Collections, Version=4.0.0.0, Culture=neutral, PublicKeyToken=aa95f207798dfdb4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Iesi.Collections.4.0.1.4000\lib\net40\Iesi.Collections.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=8.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Newtonsoft.Json.8.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="NHibernate, Version=4.0.0.4000, Culture=neutral, PublicKeyToken=aa95f207798dfdb4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\NHibernate.4.0.4.4000\lib\net40\NHibernate.dll</HintPath>
+    </Reference>
+    <Reference Include="Northwoods.Go">
+      <HintPath>..\..\..\Common\ThirdParty\GoDiagram\Northwoods.Go.dll</HintPath>
+    </Reference>
+    <Reference Include="Northwoods.Go.Draw">
+      <HintPath>..\..\..\Common\ThirdParty\GoDiagram\Northwoods.Go.Draw.dll</HintPath>
+    </Reference>
+    <Reference Include="Northwoods.Go.Instruments">
+      <HintPath>..\..\..\Common\ThirdParty\GoDiagram\Northwoods.Go.Instruments.dll</HintPath>
+    </Reference>
+    <Reference Include="Northwoods.Go.Layout">
+      <HintPath>..\..\..\Common\ThirdParty\GoDiagram\Northwoods.Go.Layout.dll</HintPath>
+    </Reference>
+    <Reference Include="Northwoods.Go.Xml">
+      <HintPath>..\..\..\Common\ThirdParty\GoDiagram\Northwoods.Go.Xml.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="GraphTransformer.cs" />
+    <Compile Include="GraphDocManager.cs" />
+    <Compile Include="GraphDocument.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Common\Solution\Sinowyde.DataLogic\Sinowyde.DataLogic.csproj">
+      <Project>{b6d22f2a-e93c-4042-9636-c23524111452}</Project>
+      <Name>Sinowyde.DataLogic</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Common\Solution\Sinowyde.DataModel\Sinowyde.DataModel.csproj">
+      <Project>{aa3d8e8d-312a-4075-89cb-09822e75f75f}</Project>
+      <Name>Sinowyde.DataModel</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Common\Solution\Sinowyde.Log\Sinowyde.Log.csproj">
+      <Project>{2ba2df95-0d3c-4fb4-8d0a-fce6c742fb82}</Project>
+      <Name>Sinowyde.Log</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Common\Solution\Sinowyde.Util\Sinowyde.Util.csproj">
+      <Project>{529550d8-4877-434a-83ce-4eeb1f6b1f9c}</Project>
+      <Name>Sinowyde.Util</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Common\Solution\Sinowyde.Zip\Sinowyde.Zip.csproj">
+      <Project>{3e47ffb6-2e22-4cb0-b213-ebb124c2d819}</Project>
+      <Name>Sinowyde.Zip</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Sinowyde.DOP.Graph.DB\Sinowyde.DOP.Graph.DB.csproj">
+      <Project>{505ea738-653f-47a7-8492-f557533b209f}</Project>
+      <Name>Sinowyde.DOP.Graph.DB</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Sinowyde.DOP.GraphicElement.Base\Sinowyde.DOP.GraphicElement.Base.csproj">
+      <Project>{314921b8-4023-43aa-b122-5b06e95e8c85}</Project>
+      <Name>Sinowyde.DOP.GraphicElement.Base</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

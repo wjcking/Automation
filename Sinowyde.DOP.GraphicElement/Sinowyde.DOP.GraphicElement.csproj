@@ -1,0 +1,442 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{FE7F4914-CE03-4A10-93FA-91D4801FAF3D}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Sinowyde.DOP.GraphicElement</RootNamespace>
+    <AssemblyName>Sinowyde.DOP.GraphicElement</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <PublishUrl>发布\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Data.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Printing.v15.2.Core, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.SpellChecker.v15.2.Core, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v15.2.UI, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraBars.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraEditors.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGrid.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraLayout.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraPrinting.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Office.v15.2.Core, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.RichEdit.v15.2.Core, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraRichEdit.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraScheduler.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraScheduler.v15.2.Core, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraScheduler.v15.2.Extensions, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraSpellChecker.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraTreeList.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraVerticalGrid.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="Ninject">
+      <HintPath>..\..\..\Common\ThirdParty\Ninject.3.2.2.0\lib\net45-full\Ninject.dll</HintPath>
+    </Reference>
+    <Reference Include="Northwoods.Go">
+      <HintPath>..\..\..\Common\ThirdParty\GoDiagram\Northwoods.Go.dll</HintPath>
+    </Reference>
+    <Reference Include="Northwoods.Go.Draw">
+      <HintPath>..\..\..\Common\ThirdParty\GoDiagram\Northwoods.Go.Draw.dll</HintPath>
+    </Reference>
+    <Reference Include="Northwoods.Go.Instruments">
+      <HintPath>..\..\..\Common\ThirdParty\GoDiagram\Northwoods.Go.Instruments.dll</HintPath>
+    </Reference>
+    <Reference Include="Northwoods.Go.Layout">
+      <HintPath>..\..\..\Common\ThirdParty\GoDiagram\Northwoods.Go.Layout.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="Sinowyde.DOP.DataModel.Control">
+      <HintPath>..\Sinowyde.DOP.DataModel.Control\obj\Debug\Sinowyde.DOP.DataModel.Control.dll</HintPath>
+    </Reference>
+    <Reference Include="Sinowyde.DOP.PIDAlgorithm, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Sinowyde.DOP.PIDAlgorithm\bin\Debug\Sinowyde.DOP.PIDAlgorithm.dll</HintPath>
+    </Reference>
+    <Reference Include="Sinowyde.DOP.PIDBlock">
+      <HintPath>..\Sinowyde.DOP.PIDBlock\obj\Debug\Sinowyde.DOP.PIDBlock.dll</HintPath>
+    </Reference>
+    <Reference Include="Sinowyde.DOP.UI">
+      <HintPath>..\Sinowyde.DOP.UI\obj\Debug\Sinowyde.DOP.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Sinowyde.Log, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Common\Solution\Sinowyde.Log\bin\Debug\Sinowyde.Log.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.Composition" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Remoting" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="UIAutomationClient" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Common\frmGraphLibs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Common\frmGraphLibs.Designer.cs">
+      <DependentUpon>frmGraphLibs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Common\frmOpenDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Common\frmOpenDialog.Designer.cs">
+      <DependentUpon>frmOpenDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Common\frmVariable.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Common\frmVariable.Designer.cs">
+      <DependentUpon>frmVariable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Common\UCtlBrushTool.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Common\UCtlBrushTool.Designer.cs">
+      <DependentUpon>UCtlBrushTool.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Common\UCtlColor.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Common\UCtlColor.designer.cs">
+      <DependentUpon>UCtlColor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Common\UCtlColorMul.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Common\UCtlColorMul.Designer.cs">
+      <DependentUpon>UCtlColorMul.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Common\UCtlGetVariable.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Common\UCtlGetVariable.Designer.cs">
+      <DependentUpon>UCtlGetVariable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Common\UCtlHValueColor.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Common\UCtlHValueColor.Designer.cs">
+      <DependentUpon>UCtlHValueColor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Common\UCtlPIDAlgorithms.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Common\UCtlPIDAlgorithms.Designer.cs">
+      <DependentUpon>UCtlPIDAlgorithms.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Common\UCtlValueColor.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Common\UCtlValueColor.Designer.cs">
+      <DependentUpon>UCtlValueColor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DOPFigures\DOPBarMeter.cs" />
+    <Compile Include="DOPFigures\DOPGauge.cs" />
+    <Compile Include="DOPFigures\DOPDialog.cs" />
+    <Compile Include="DOPFigures\DOPButton.cs" />
+    <Compile Include="DOPFigures\DOPHotspot.cs" />
+    <Compile Include="DOPFigures\DOPImageButton.cs" />
+    <Compile Include="DOPFigures\DOPTimer.cs" />
+    <Compile Include="DOPFigureTool\DOPBarMeterTool.cs" />
+    <Compile Include="DOPFigureTool\DOPGauge.cs" />
+    <Compile Include="DOPFigureTool\DOPDialogTool.cs" />
+    <Compile Include="DOPFigureTool\DOPButtonTool.cs" />
+    <Compile Include="DOPFigureTool\DOPHotspotTool.cs" />
+    <Compile Include="DOPFigureTool\DOPImageButtonTool.cs" />
+    <Compile Include="DOPFigureTool\DOPImageLibraryTool.cs" />
+    <Compile Include="DOPFigureTool\DOPTimerTool.cs" />
+    <Compile Include="DOPGraphFactory\DOPBlockArrowFactory.cs" />
+    <Compile Include="DOPGraphFactory\DOPBlockArrowTool.cs" />
+    <Compile Include="DOPGraphTool\DOPImageTool.cs" />
+    <Compile Include="DOPGraphTool\DOPLineTool.cs" />
+    <Compile Include="DOPGraphTool\DOPTextTool.cs" />
+    <Compile Include="DOPFigures\DOPImageLibrary.cs" />
+    <Compile Include="DOPGraph\DOPArc.cs" />
+    <Compile Include="DOPGraphFactory\DOPArcFactory.cs" />
+    <Compile Include="DOPGraphFactory\DOPEllipseFactory.cs" />
+    <Compile Include="DOPGraph\DOPBlockArrow.cs" />
+    <Compile Include="DOPGraph\DOPDrawing.cs" />
+    <Compile Include="DOPGraph\DOPImage.cs" />
+    <Compile Include="DOPGraph\DOPLine.cs" />
+    <Compile Include="DOPGraphTool\DOPPolygonTool.cs" />
+    <Compile Include="DOPGraphFactory\DOPRectangleFactory.cs" />
+    <Compile Include="DOPGraphFactory\DOPRoundedRectangleFactory.cs" />
+    <Compile Include="DOPGraph\DOPEllipse.cs" />
+    <Compile Include="DOPGraph\DOPPolygon.cs" />
+    <Compile Include="DOPGraph\DOPRectangle.cs" />
+    <Compile Include="DOPGraph\DOPRoundedRectangle.cs" />
+    <Compile Include="DOPGraph\DOPText.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\frmViewDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserControl\frmViewDialog.Designer.cs">
+      <DependentUpon>frmViewDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\UCtlBarMeterParam.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl\UCtlBarMeterParam.Designer.cs">
+      <DependentUpon>UCtlBarMeterParam.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\UCtlImageButtonParam.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl\UCtlImageButtonParam.Designer.cs">
+      <DependentUpon>UCtlImageButtonParam.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\UCtlImageLibraryParam.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl\UCtlImageLibraryParam.designer.cs">
+      <DependentUpon>UCtlImageLibraryParam.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\UCtlDialogParam.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl\UCtlDialogParam.designer.cs">
+      <DependentUpon>UCtlDialogParam.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\UCtlButtonParam.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl\UCtlButtonParam.Designer.cs">
+      <DependentUpon>UCtlButtonParam.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\UCtlGraphParam.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl\UCtlGraphParam.Designer.cs">
+      <DependentUpon>UCtlGraphParam.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\UCtlHotspotParam.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl\UCtlHotspotParam.designer.cs">
+      <DependentUpon>UCtlHotspotParam.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\UCtlImageParam.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl\UCtlImageParam.Designer.cs">
+      <DependentUpon>UCtlImageParam.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\UCtlMeterParam.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl\UCtlMeterParam.Designer.cs">
+      <DependentUpon>UCtlMeterParam.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\UCtlTextParam.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl\UCtlTextParam.Designer.cs">
+      <DependentUpon>UCtlTextParam.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\UCtlTimeParam.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl\UCtlTimeParam.designer.cs">
+      <DependentUpon>UCtlTimeParam.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Common\frmGraphLibs.resx">
+      <DependentUpon>frmGraphLibs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Common\frmOpenDialog.resx">
+      <DependentUpon>frmOpenDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Common\frmVariable.resx">
+      <DependentUpon>frmVariable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Common\UCtlBrushTool.resx">
+      <DependentUpon>UCtlBrushTool.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Common\UCtlColor.resx">
+      <DependentUpon>UCtlColor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Common\UCtlColorMul.resx">
+      <DependentUpon>UCtlColorMul.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Common\UCtlGetVariable.resx">
+      <DependentUpon>UCtlGetVariable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Common\UCtlHValueColor.resx">
+      <DependentUpon>UCtlHValueColor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Common\UCtlPIDAlgorithms.resx">
+      <DependentUpon>UCtlPIDAlgorithms.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Common\UCtlValueColor.resx">
+      <DependentUpon>UCtlValueColor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl\frmViewDialog.resx">
+      <DependentUpon>frmViewDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl\UCtlBarMeterParam.resx">
+      <DependentUpon>UCtlBarMeterParam.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl\UCtlImageButtonParam.resx">
+      <DependentUpon>UCtlImageButtonParam.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl\UCtlImageLibraryParam.resx">
+      <DependentUpon>UCtlImageLibraryParam.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl\UCtlDialogParam.resx">
+      <DependentUpon>UCtlDialogParam.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl\UCtlButtonParam.resx">
+      <DependentUpon>UCtlButtonParam.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl\UCtlGraphParam.resx">
+      <DependentUpon>UCtlGraphParam.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl\UCtlHotspotParam.resx">
+      <DependentUpon>UCtlHotspotParam.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl\UCtlImageParam.resx">
+      <DependentUpon>UCtlImageParam.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl\UCtlMeterParam.resx">
+      <DependentUpon>UCtlMeterParam.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl\UCtlTextParam.resx">
+      <DependentUpon>UCtlTextParam.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl\UCtlTimeParam.resx">
+      <DependentUpon>UCtlTimeParam.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Common\Solution\Sinowyde.DataLogic\Sinowyde.DataLogic.csproj">
+      <Project>{b6d22f2a-e93c-4042-9636-c23524111452}</Project>
+      <Name>Sinowyde.DataLogic</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Common\Solution\Sinowyde.DataModel\Sinowyde.DataModel.csproj">
+      <Project>{aa3d8e8d-312a-4075-89cb-09822e75f75f}</Project>
+      <Name>Sinowyde.DataModel</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Common\Solution\Sinowyde.RtModel\Sinowyde.RTModel.csproj">
+      <Project>{770f76df-a232-40ce-9353-ddbd67669d3e}</Project>
+      <Name>Sinowyde.RTModel</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Common\Solution\Sinowyde.Util\Sinowyde.Util.csproj">
+      <Project>{529550d8-4877-434a-83ce-4eeb1f6b1f9c}</Project>
+      <Name>Sinowyde.Util</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Sinowyde.DOP.DataLogic\Sinowyde.DOP.DataLogic.csproj">
+      <Project>{cc5aa595-01e0-485a-8d88-541c30755680}</Project>
+      <Name>Sinowyde.DOP.DataLogic</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Sinowyde.DOP.DataModel\Sinowyde.DOP.DataModel.csproj">
+      <Project>{433defaa-990d-470d-9751-959d594b5338}</Project>
+      <Name>Sinowyde.DOP.DataModel</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Sinowyde.DOP.DTProxy\Sinowyde.DOP.DTProxy.csproj">
+      <Project>{e95d2d7f-9972-4b2f-af56-85330ea82d42}</Project>
+      <Name>Sinowyde.DOP.DTProxy</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Sinowyde.DOP.Graph.DB\Sinowyde.DOP.Graph.DB.csproj">
+      <Project>{505ea738-653f-47a7-8492-f557533b209f}</Project>
+      <Name>Sinowyde.DOP.Graph.DB</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Sinowyde.DOP.Graph.Xml\Sinowyde.DOP.Graph.Xml.csproj">
+      <Project>{4c48dc39-ce98-4907-9a75-afd84fa29aae}</Project>
+      <Name>Sinowyde.DOP.Graph.Xml</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Sinowyde.DOP.GraphicElement.Base\Sinowyde.DOP.GraphicElement.Base.csproj">
+      <Project>{314921b8-4023-43aa-b122-5b06e95e8c85}</Project>
+      <Name>Sinowyde.DOP.GraphicElement.Base</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Sinowyde.DOP.PIDAlgorithm.DB\Sinowyde.DOP.PIDAlgorithm.DB.csproj">
+      <Project>{3eaf9243-361c-49f9-8745-119475a59864}</Project>
+      <Name>Sinowyde.DOP.PIDAlgorithm.DB</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Sinowyde.DOP.PIDAlgorithm.Logic\Sinowyde.DOP.PIDAlgorithm.Logic.csproj">
+      <Project>{4f0882cc-8c17-4fc4-af95-7d1cbf8198aa}</Project>
+      <Name>Sinowyde.DOP.PIDAlgorithm.Logic</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5 %28x86 和 x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram1.cd" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

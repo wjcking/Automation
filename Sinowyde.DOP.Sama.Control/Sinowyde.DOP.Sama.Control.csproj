@@ -1,0 +1,305 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{905D964D-0331-4005-8D6A-6DFD277E930A}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Sinowyde.DOP.Sama.Control</RootNamespace>
+    <AssemblyName>Sinowyde.DOP.Sama.Control</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\Sinowyde.ConsoleApplication\bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Data.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Printing.v15.2.Core, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.SpellChecker.v15.2.Core, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraBars.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraEditors.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGrid.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraLayout.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraScheduler.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraScheduler.v15.2.Core, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraScheduler.v15.2.Extensions, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraSpellChecker.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraTreeList.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="Ninject">
+      <HintPath>..\packages\Ninject.3.2.2.0\lib\net45-full\Ninject.dll</HintPath>
+    </Reference>
+    <Reference Include="Northwoods.Go">
+      <HintPath>..\..\..\Common\ThirdParty\GoDiagram\Northwoods.Go.dll</HintPath>
+    </Reference>
+    <Reference Include="Northwoods.Go.Draw">
+      <HintPath>..\..\..\Common\ThirdParty\GoDiagram\Northwoods.Go.Draw.dll</HintPath>
+    </Reference>
+    <Reference Include="Northwoods.Go.Instruments">
+      <HintPath>..\..\..\Common\ThirdParty\GoDiagram\Northwoods.Go.Instruments.dll</HintPath>
+    </Reference>
+    <Reference Include="Northwoods.Go.Layout">
+      <HintPath>..\..\..\Common\ThirdParty\GoDiagram\Northwoods.Go.Layout.dll</HintPath>
+    </Reference>
+    <Reference Include="Northwoods.Go.Xml">
+      <HintPath>..\..\..\Common\ThirdParty\GoDiagram\Northwoods.Go.Xml.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.Composition" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Remoting" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="UIAutomationClient" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Frms\FrmAbout.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frms\FrmAbout.Designer.cs">
+      <DependentUpon>FrmAbout.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frms\FrmAddPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frms\FrmAddPage.Designer.cs">
+      <DependentUpon>FrmAddPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frms\FrmBackup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frms\FrmBackup.Designer.cs">
+      <DependentUpon>FrmBackup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frms\FrmDebugSetting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frms\FrmDebugSetting.Designer.cs">
+      <DependentUpon>FrmDebugSetting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frms\FrmRecovery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frms\FrmRecovery.Designer.cs">
+      <DependentUpon>FrmRecovery.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frms\FrmSearch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frms\FrmSearch.Designer.cs">
+      <DependentUpon>FrmSearch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frms\FrmStatistics.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frms\FrmStatistics.Designer.cs">
+      <DependentUpon>FrmStatistics.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="UserControlSama.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControlSama.Designer.cs">
+      <DependentUpon>UserControlSama.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UserControlErr.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\UserControlErr.Designer.cs">
+      <DependentUpon>UserControlErr.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UserControlSearch.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\UserControlSearch.Designer.cs">
+      <DependentUpon>UserControlSearch.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Frms\FrmAbout.resx">
+      <DependentUpon>FrmAbout.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frms\FrmAddPage.resx">
+      <DependentUpon>FrmAddPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frms\FrmBackup.resx">
+      <DependentUpon>FrmBackup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frms\FrmDebugSetting.resx">
+      <DependentUpon>FrmDebugSetting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frms\FrmRecovery.resx">
+      <DependentUpon>FrmRecovery.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frms\FrmSearch.resx">
+      <DependentUpon>FrmSearch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frms\FrmStatistics.resx">
+      <DependentUpon>FrmStatistics.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControlSama.resx">
+      <DependentUpon>UserControlSama.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\UserControlErr.resx">
+      <DependentUpon>UserControlErr.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\UserControlSearch.resx">
+      <DependentUpon>UserControlSearch.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Common\Solution\Sinowyde.DataLogic\Sinowyde.DataLogic.csproj">
+      <Project>{b6d22f2a-e93c-4042-9636-c23524111452}</Project>
+      <Name>Sinowyde.DataLogic</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Common\Solution\Sinowyde.DataModel\Sinowyde.DataModel.csproj">
+      <Project>{aa3d8e8d-312a-4075-89cb-09822e75f75f}</Project>
+      <Name>Sinowyde.DataModel</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Common\Solution\Sinowyde.Log\Sinowyde.Log.csproj">
+      <Project>{2ba2df95-0d3c-4fb4-8d0a-fce6c742fb82}</Project>
+      <Name>Sinowyde.Log</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Common\Solution\Sinowyde.Util\Sinowyde.Util.csproj">
+      <Project>{529550d8-4877-434a-83ce-4eeb1f6b1f9c}</Project>
+      <Name>Sinowyde.Util</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Sinowyde.Common.UI\Sinowyde.Common.UI.csproj">
+      <Project>{86a7b04b-ee1a-4797-baec-e282578df169}</Project>
+      <Name>Sinowyde.Common.UI</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Sinowyde.DOP.DataBus\Sinowyde.DOP.DataBus.csproj">
+      <Project>{96f7f144-6e49-4ed8-998f-cb95a7ab81e3}</Project>
+      <Name>Sinowyde.DOP.DataBus</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Sinowyde.DOP.DataLogic\Sinowyde.DOP.DataLogic.csproj">
+      <Project>{cc5aa595-01e0-485a-8d88-541c30755680}</Project>
+      <Name>Sinowyde.DOP.DataLogic</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Sinowyde.DOP.DataModel\Sinowyde.DOP.DataModel.csproj">
+      <Project>{433defaa-990d-470d-9751-959d594b5338}</Project>
+      <Name>Sinowyde.DOP.DataModel</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Sinowyde.DOP.DTProxy\Sinowyde.DOP.DTProxy.csproj">
+      <Project>{e95d2d7f-9972-4b2f-af56-85330ea82d42}</Project>
+      <Name>Sinowyde.DOP.DTProxy</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Sinowyde.DOP.PIDAlgorithm.DB\Sinowyde.DOP.PIDAlgorithm.DB.csproj">
+      <Project>{3eaf9243-361c-49f9-8745-119475a59864}</Project>
+      <Name>Sinowyde.DOP.PIDAlgorithm.DB</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Sinowyde.DOP.PIDAlgorithm\Sinowyde.DOP.PIDAlgorithm.csproj">
+      <Project>{d6326efc-eb44-4492-8ef7-7ae91768d78b}</Project>
+      <Name>Sinowyde.DOP.PIDAlgorithm</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Sinowyde.DOP.PIDBlock.Env\Sinowyde.DOP.PIDBlock.Env.csproj">
+      <Project>{dc322e6c-7e51-4ae8-8466-c02d2d3a3856}</Project>
+      <Name>Sinowyde.DOP.PIDBlock.Env</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Sinowyde.DOP.PIDBlock.Xml\Sinowyde.DOP.PIDBlock.Xml.csproj">
+      <Project>{6597cfff-a4b8-42a2-8987-6dbad6856028}</Project>
+      <Name>Sinowyde.DOP.PIDBlock.Xml</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Sinowyde.DOP.PIDBlock\Sinowyde.DOP.PIDBlock.csproj">
+      <Project>{5bd90716-dd9b-4ce6-8aff-22a51e71646a}</Project>
+      <Name>Sinowyde.DOP.PIDBlock</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Sinowyde.DOP.UI\Sinowyde.DOP.UI.csproj">
+      <Project>{6f8df2ba-7bb4-4a6d-8fb3-7140712f938e}</Project>
+      <Name>Sinowyde.DOP.UI</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Resources\BtnNormal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BtnSelected.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,48 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Drawing;
+using System.Data;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+using DevExpress.XtraEditors;
+
+namespace Sinowyde.DOP.PIDBlock.Nonlinearity
+{
+    public partial class CtrlParamHyloop : XtraUserControl, ICtrlParamBase
+    {
+        public CtrlParamHyloop()
+        {
+            InitializeComponent();
+        }
+        #region ICtrlParamBase
+        public string BlockName
+        {
+            get { return "滞环开关算法块"; }
+        }
+        public PIDAlgorithm.PIDBindAlgorithm Algorithm
+        {
+            get;
+            set;
+        }
+
+        public void LoadParam()
+        {
+            this.UpdateParams(true, Algorithm);
+        }
+
+        public bool SaveParam()
+        {
+            this.UpdateParams(false, Algorithm);
+            return true;
+        }
+
+        public UserControl GetParamCtrl()
+        {
+            return this;
+        }
+        #endregion
+    }
+}

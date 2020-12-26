@@ -1,0 +1,192 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{2CF23060-8E1B-4858-AD69-834ED4E64C6C}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Sinowyde.ConsoleApplication</RootNamespace>
+    <AssemblyName>Sinowyde.ConsoleApplication</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>Sinowyde.ConsoleApplication.Program</StartupObject>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AsyncIO">
+      <HintPath>..\packages\AsyncIO.0.1.18.0\lib\net40\AsyncIO.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Data.v15.2" />
+    <Reference Include="DevExpress.Printing.v15.2.Core" />
+    <Reference Include="DevExpress.Utils.v15.2" />
+    <Reference Include="DevExpress.XtraBars.v15.2" />
+    <Reference Include="DevExpress.Sparkline.v15.2.Core" />
+    <Reference Include="DevExpress.XtraEditors.v15.2" />
+    <Reference Include="MySql.Data">
+      <HintPath>..\packages\MySql.Data.6.9.8\lib\net45\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="NetMQ, Version=3.3.2.2, Culture=neutral, PublicKeyToken=a6decef4ddc58b3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\NetMQ.3.3.2.2\lib\net40\NetMQ.dll</HintPath>
+    </Reference>
+    <Reference Include="Ninject, Version=3.2.0.0, Culture=neutral, PublicKeyToken=c7192dc5380945e7, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Common\ThirdParty\Ninject.3.2.2.0\lib\net45-full\Ninject.dll</HintPath>
+    </Reference>
+    <Reference Include="Northwoods.Go, Version=5.1.0.45, Culture=neutral, PublicKeyToken=a4e3b7b70161cfe8, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Common\ThirdParty\GoDiagram\Northwoods.Go.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.Composition" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DevExpressLocalizerHelper.cs" />
+    <Compile Include="DevexpressUtil.cs" />
+    <Compile Include="FrmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMain.Designer.cs">
+      <DependentUpon>FrmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FrmMain.resx">
+      <DependentUpon>FrmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="App.config">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Common\Solution\Sinowyde.DataLogic\Sinowyde.DataLogic.csproj">
+      <Project>{b6d22f2a-e93c-4042-9636-c23524111452}</Project>
+      <Name>Sinowyde.DataLogic</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Common\Solution\Sinowyde.Log\Sinowyde.Log.csproj">
+      <Project>{2ba2df95-0d3c-4fb4-8d0a-fce6c742fb82}</Project>
+      <Name>Sinowyde.Log</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Sinowyde.DOP.DTProxy\Sinowyde.DOP.DTProxy.csproj">
+      <Project>{e95d2d7f-9972-4b2f-af56-85330ea82d42}</Project>
+      <Name>Sinowyde.DOP.DTProxy</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Sinowyde.DOP.PIDBlock.Choice\Sinowyde.DOP.PIDBlock.Choice.csproj">
+      <Project>{e59ead48-a3b7-4c81-b474-cd00dfe20034}</Project>
+      <Name>Sinowyde.DOP.PIDBlock.Choice</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Sinowyde.DOP.PIDBlock.Control\Sinowyde.DOP.PIDBlock.Control.csproj">
+      <Project>{a06df608-fd30-4853-9529-cd6068f3b984}</Project>
+      <Name>Sinowyde.DOP.PIDBlock.Control</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Sinowyde.DOP.PIDBlock.IO\Sinowyde.DOP.PIDBlock.IO.csproj">
+      <Project>{e42948e9-1015-424c-a35d-711fd637d8e7}</Project>
+      <Name>Sinowyde.DOP.PIDBlock.IO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Sinowyde.DOP.PIDBlock.Linearity\Sinowyde.DOP.PIDBlock.Linearity.csproj">
+      <Project>{4b1b1c79-846f-47fc-b4d4-14c020861e48}</Project>
+      <Name>Sinowyde.DOP.PIDBlock.Linearity</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Sinowyde.DOP.PIDBlock.Logic\Sinowyde.DOP.PIDBlock.Logic.csproj">
+      <Project>{bc16a3f4-5f89-4c82-93a3-c19b19f4c02e}</Project>
+      <Name>Sinowyde.DOP.PIDBlock.Logic</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Sinowyde.DOP.PIDBlock.Maths\Sinowyde.DOP.PIDBlock.Math.csproj">
+      <Project>{7de52fb6-cd91-46f1-baa4-a6a4ca7dfa76}</Project>
+      <Name>Sinowyde.DOP.PIDBlock.Math</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Sinowyde.DOP.PIDBlock.Nonlinearity\Sinowyde.DOP.PIDBlock.Nonlinearity.csproj">
+      <Project>{fcacdd12-1d37-4ea3-acbf-211319d8c503}</Project>
+      <Name>Sinowyde.DOP.PIDBlock.Nonlinearity</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Sinowyde.DOP.PIDBlock.Signal\Sinowyde.DOP.PIDBlock.Signal.csproj">
+      <Project>{f9a7e18b-eab0-4364-ae3e-b91860b83552}</Project>
+      <Name>Sinowyde.DOP.PIDBlock.Signal</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Sinowyde.DOP.PIDBlock.Special\Sinowyde.DOP.PIDBlock.Special.csproj">
+      <Project>{cfa3de3a-3287-4f03-acb9-b76be42c1656}</Project>
+      <Name>Sinowyde.DOP.PIDBlock.Special</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Sinowyde.DOP.PIDBlock.Time\Sinowyde.DOP.PIDBlock.Time.csproj">
+      <Project>{f83f617c-61ae-4f41-bf8c-68adb250858a}</Project>
+      <Name>Sinowyde.DOP.PIDBlock.Time</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Sinowyde.DOP.PIDBlock.Xml\Sinowyde.DOP.PIDBlock.Xml.csproj">
+      <Project>{6597cfff-a4b8-42a2-8987-6dbad6856028}</Project>
+      <Name>Sinowyde.DOP.PIDBlock.Xml</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Sinowyde.DOP.PIDBlock\Sinowyde.DOP.PIDBlock.csproj">
+      <Project>{5bd90716-dd9b-4ce6-8aff-22a51e71646a}</Project>
+      <Name>Sinowyde.DOP.PIDBlock</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Sinowyde.DOP.Sama.Control\Sinowyde.DOP.Sama.Control.csproj">
+      <Project>{905d964d-0331-4005-8d6a-6dfd277e930a}</Project>
+      <Name>Sinowyde.DOP.Sama.Control</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Sinowyde.DOP.UI\Sinowyde.DOP.UI.csproj">
+      <Project>{6f8df2ba-7bb4-4a6d-8fb3-7140712f938e}</Project>
+      <Name>Sinowyde.DOP.UI</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

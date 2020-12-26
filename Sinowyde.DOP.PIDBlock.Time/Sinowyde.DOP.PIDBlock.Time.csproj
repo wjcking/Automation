@@ -1,0 +1,202 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F83F617C-61AE-4F41-BF8C-68ADB250858A}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Sinowyde.DOP.PIDBlock.Time</RootNamespace>
+    <AssemblyName>Sinowyde.DOP.PIDBlock.Time</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\Sinowyde.ConsoleApplication\bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\Sinowyde.ConsoleApplication\bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Data.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.Utils.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.XtraEditors.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="Northwoods.Go">
+      <HintPath>..\..\..\Common\ThirdParty\GoDiagram\Northwoods.Go.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.Composition" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Blocks\Sct2Block.cs" />
+    <Compile Include="Blocks\DelayoffBlock.cs" />
+    <Compile Include="Blocks\DelayonBlock.cs" />
+    <Compile Include="Blocks\PulseBlock.cs" />
+    <Compile Include="Blocks\SctBlock.cs" />
+    <Compile Include="Blocks\TotalBlock.cs" />
+    <Compile Include="ParamCtrls\CtrlParamDelayoff.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ParamCtrls\CtrlParamDelayoff.Designer.cs">
+      <DependentUpon>CtrlParamDelayoff.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ParamCtrls\CtrlParamDelayon.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ParamCtrls\CtrlParamDelayon.Designer.cs">
+      <DependentUpon>CtrlParamDelayon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ParamCtrls\CtrlParamPulse.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ParamCtrls\CtrlParamPulse.Designer.cs">
+      <DependentUpon>CtrlParamPulse.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ParamCtrls\CtrlParamSct.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ParamCtrls\CtrlParamSct.Designer.cs">
+      <DependentUpon>CtrlParamSct.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ParamCtrls\CtrlParamSct2.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ParamCtrls\CtrlParamSct2.Designer.cs">
+      <DependentUpon>CtrlParamSct2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ParamCtrls\CtrlParamTotal.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ParamCtrls\CtrlParamTotal.Designer.cs">
+      <DependentUpon>CtrlParamTotal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Tools\Sct2BlockTools.cs" />
+    <Compile Include="Tools\DelayoffBlockTools.cs" />
+    <Compile Include="Tools\DelayonBlockTools.cs" />
+    <Compile Include="Tools\PulseBlockTools.cs" />
+    <Compile Include="Tools\SctBlockTools.cs" />
+    <Compile Include="Tools\TotalBlockTools.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Common\Solution\Sinowyde.Util\Sinowyde.Util.csproj">
+      <Project>{529550d8-4877-434a-83ce-4eeb1f6b1f9c}</Project>
+      <Name>Sinowyde.Util</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Sinowyde.DOP.PIDAlgorithm.Time\Sinowyde.DOP.PIDAlgorithm.Time.csproj">
+      <Project>{bf7fbaa8-6be5-4436-bf23-735c368e87ba}</Project>
+      <Name>Sinowyde.DOP.PIDAlgorithm.Time</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Sinowyde.DOP.PIDAlgorithm\Sinowyde.DOP.PIDAlgorithm.csproj">
+      <Project>{d6326efc-eb44-4492-8ef7-7ae91768d78b}</Project>
+      <Name>Sinowyde.DOP.PIDAlgorithm</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Sinowyde.DOP.PIDBlock\Sinowyde.DOP.PIDBlock.csproj">
+      <Project>{5bd90716-dd9b-4ce6-8aff-22a51e71646a}</Project>
+      <Name>Sinowyde.DOP.PIDBlock</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ParamCtrls\CtrlParamDelayoff.resx">
+      <DependentUpon>CtrlParamDelayoff.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ParamCtrls\CtrlParamDelayon.resx">
+      <DependentUpon>CtrlParamDelayon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ParamCtrls\CtrlParamPulse.resx">
+      <DependentUpon>CtrlParamPulse.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ParamCtrls\CtrlParamSct.resx">
+      <DependentUpon>CtrlParamSct.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ParamCtrls\CtrlParamSct2.resx">
+      <DependentUpon>CtrlParamSct2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ParamCtrls\CtrlParamTotal.resx">
+      <DependentUpon>CtrlParamTotal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\time_sct2_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\time_sct2_normal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\time_pulse_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\time_pulse_normal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\time_sct_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\time_sct_normal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\time_total_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\time_total_normal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\time_delayoff_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\time_delayoff_normal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\time_delayon_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\time_delayon_normal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\系统当前时间2.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

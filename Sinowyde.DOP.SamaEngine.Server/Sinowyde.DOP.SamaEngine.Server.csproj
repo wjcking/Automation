@@ -1,0 +1,181 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{536C2ADD-2BBB-453E-AC17-3D87B2595BBB}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Sinowyde.DOP.SamaEngine.Server</RootNamespace>
+    <AssemblyName>Sinowyde.DOP.SamaEngine.Server</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Iesi.Collections">
+      <HintPath>..\packages\Iesi.Collections.4.0.1.4000\lib\net40\Iesi.Collections.dll</HintPath>
+    </Reference>
+    <Reference Include="NHibernate">
+      <HintPath>..\packages\NHibernate.4.0.4.4000\lib\net40\NHibernate.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration.Install" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.ServiceProcess" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Installer.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Installer.Designer.cs">
+      <DependentUpon>Installer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SamaPageRunTime.cs" />
+    <Compile Include="SamaManager.cs" />
+    <Compile Include="EngineService.cs" />
+    <Compile Include="EngineThread.cs" />
+    <Compile Include="NTService.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="NTService.Designer.cs">
+      <DependentUpon>NTService.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Common\Solution\Sinowyde.DataLogic\Sinowyde.DataLogic.csproj">
+      <Project>{b6d22f2a-e93c-4042-9636-c23524111452}</Project>
+      <Name>Sinowyde.DataLogic</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Common\Solution\Sinowyde.DataModel\Sinowyde.DataModel.csproj">
+      <Project>{aa3d8e8d-312a-4075-89cb-09822e75f75f}</Project>
+      <Name>Sinowyde.DataModel</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Common\Solution\Sinowyde.Log\Sinowyde.Log.csproj">
+      <Project>{2ba2df95-0d3c-4fb4-8d0a-fce6c742fb82}</Project>
+      <Name>Sinowyde.Log</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Common\Solution\Sinowyde.Util\Sinowyde.Util.csproj">
+      <Project>{529550d8-4877-434a-83ce-4eeb1f6b1f9c}</Project>
+      <Name>Sinowyde.Util</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Sinowyde.DOP.DataBus\Sinowyde.DOP.DataBus.csproj">
+      <Project>{96f7f144-6e49-4ed8-998f-cb95a7ab81e3}</Project>
+      <Name>Sinowyde.DOP.DataBus</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Sinowyde.DOP.DataLogic\Sinowyde.DOP.DataLogic.csproj">
+      <Project>{cc5aa595-01e0-485a-8d88-541c30755680}</Project>
+      <Name>Sinowyde.DOP.DataLogic</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Sinowyde.DOP.DataModel\Sinowyde.DOP.DataModel.csproj">
+      <Project>{433defaa-990d-470d-9751-959d594b5338}</Project>
+      <Name>Sinowyde.DOP.DataModel</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Sinowyde.DOP.PIDAlgorithm.Choice\Sinowyde.DOP.PIDAlgorithm.Choice.csproj">
+      <Project>{24a8a22f-a66e-4229-8a02-0fbf1437d35a}</Project>
+      <Name>Sinowyde.DOP.PIDAlgorithm.Choice</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Sinowyde.DOP.PIDAlgorithm.Control\Sinowyde.DOP.PIDAlgorithm.Control.csproj">
+      <Project>{5090e4a1-b850-490c-838e-c65b6829164b}</Project>
+      <Name>Sinowyde.DOP.PIDAlgorithm.Control</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Sinowyde.DOP.PIDAlgorithm.DB\Sinowyde.DOP.PIDAlgorithm.DB.csproj">
+      <Project>{3eaf9243-361c-49f9-8745-119475a59864}</Project>
+      <Name>Sinowyde.DOP.PIDAlgorithm.DB</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Sinowyde.DOP.PIDAlgorithm.IO\Sinowyde.DOP.PIDAlgorithm.IO.csproj">
+      <Project>{5972a63e-7a10-4c0e-8c51-479dfac93c3a}</Project>
+      <Name>Sinowyde.DOP.PIDAlgorithm.IO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Sinowyde.DOP.PIDAlgorithm.Linearity\Sinowyde.DOP.PIDAlgorithm.Linearity.csproj">
+      <Project>{6d781562-4782-48e8-bb9b-8ab04e4d2060}</Project>
+      <Name>Sinowyde.DOP.PIDAlgorithm.Linearity</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Sinowyde.DOP.PIDAlgorithm.Logic\Sinowyde.DOP.PIDAlgorithm.Logic.csproj">
+      <Project>{4f0882cc-8c17-4fc4-af95-7d1cbf8198aa}</Project>
+      <Name>Sinowyde.DOP.PIDAlgorithm.Logic</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Sinowyde.DOP.PIDAlgorithm.Math\Sinowyde.DOP.PIDAlgorithm.Math.csproj">
+      <Project>{bb20c710-a278-46c3-9752-7037caba9005}</Project>
+      <Name>Sinowyde.DOP.PIDAlgorithm.Math</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Sinowyde.DOP.PIDAlgorithm.Nonlinearity\Sinowyde.DOP.PIDAlgorithm.Nonlinearity.csproj">
+      <Project>{c6d0cbde-6e3b-4e59-83eb-d1e5298af4d6}</Project>
+      <Name>Sinowyde.DOP.PIDAlgorithm.Nonlinearity</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Sinowyde.DOP.PIDAlgorithm.Signal\Sinowyde.DOP.PIDAlgorithm.Signal.csproj">
+      <Project>{ea04d9cf-edb8-4c83-b8b4-08eb1ecbb270}</Project>
+      <Name>Sinowyde.DOP.PIDAlgorithm.Signal</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Sinowyde.DOP.PIDAlgorithm.Special\Sinowyde.DOP.PIDAlgorithm.Special.csproj">
+      <Project>{1b1ab8eb-2c71-401f-a78a-21b650a5f5e9}</Project>
+      <Name>Sinowyde.DOP.PIDAlgorithm.Special</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Sinowyde.DOP.PIDAlgorithm.Time\Sinowyde.DOP.PIDAlgorithm.Time.csproj">
+      <Project>{bf7fbaa8-6be5-4436-bf23-735c368e87ba}</Project>
+      <Name>Sinowyde.DOP.PIDAlgorithm.Time</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Sinowyde.DOP.PIDAlgorithm\Sinowyde.DOP.PIDAlgorithm.csproj">
+      <Project>{d6326efc-eb44-4492-8ef7-7ae91768d78b}</Project>
+      <Name>Sinowyde.DOP.PIDAlgorithm</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Installer.resx">
+      <DependentUpon>Installer.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

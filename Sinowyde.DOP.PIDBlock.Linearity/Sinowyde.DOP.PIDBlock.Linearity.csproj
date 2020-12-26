@@ -1,0 +1,193 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{4B1B1C79-846F-47FC-B4D4-14C020861E48}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Sinowyde.DOP.PIDBlock.Linearity</RootNamespace>
+    <AssemblyName>Sinowyde.DOP.PIDBlock.Linearity</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\Sinowyde.ConsoleApplication\bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Data.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.Utils.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.XtraEditors.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="Northwoods.Go">
+      <HintPath>..\..\..\Common\ThirdParty\GoDiagram\Northwoods.Go.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.Composition" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Blocks\ConstBlock.cs" />
+    <Compile Include="Blocks\DalayBlock.cs" />
+    <Compile Include="Blocks\DiffBlock.cs" />
+    <Compile Include="Blocks\DsBlock.cs" />
+    <Compile Include="Blocks\IntegBlock.cs" />
+    <Compile Include="ParamCtrls\CtrlParamConst.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ParamCtrls\CtrlParamConst.Designer.cs">
+      <DependentUpon>CtrlParamConst.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ParamCtrls\CtrlParamDalay.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ParamCtrls\CtrlParamDalay.Designer.cs">
+      <DependentUpon>CtrlParamDalay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ParamCtrls\CtrlParamDiff.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ParamCtrls\CtrlParamDiff.Designer.cs">
+      <DependentUpon>CtrlParamDiff.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ParamCtrls\CtrlParamDs.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ParamCtrls\CtrlParamDs.Designer.cs">
+      <DependentUpon>CtrlParamDs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ParamCtrls\CtrlParamInteg.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ParamCtrls\CtrlParamInteg.Designer.cs">
+      <DependentUpon>CtrlParamInteg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Tools\ConstBlockTools.cs" />
+    <Compile Include="Tools\DalayBlockTools.cs" />
+    <Compile Include="Tools\DiffBlockTools.cs" />
+    <Compile Include="Tools\DsBlockTools.cs" />
+    <Compile Include="Tools\IntegBlockTools.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Common\Solution\Sinowyde.Util\Sinowyde.Util.csproj">
+      <Project>{529550d8-4877-434a-83ce-4eeb1f6b1f9c}</Project>
+      <Name>Sinowyde.Util</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Sinowyde.DOP.PIDAlgorithm.Linearity\Sinowyde.DOP.PIDAlgorithm.Linearity.csproj">
+      <Project>{6d781562-4782-48e8-bb9b-8ab04e4d2060}</Project>
+      <Name>Sinowyde.DOP.PIDAlgorithm.Linearity</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Sinowyde.DOP.PIDAlgorithm\Sinowyde.DOP.PIDAlgorithm.csproj">
+      <Project>{d6326efc-eb44-4492-8ef7-7ae91768d78b}</Project>
+      <Name>Sinowyde.DOP.PIDAlgorithm</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Sinowyde.DOP.PIDBlock\Sinowyde.DOP.PIDBlock.csproj">
+      <Project>{5bd90716-dd9b-4ce6-8aff-22a51e71646a}</Project>
+      <Name>Sinowyde.DOP.PIDBlock</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ParamCtrls\CtrlParamConst.resx">
+      <DependentUpon>CtrlParamConst.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ParamCtrls\CtrlParamDalay.resx">
+      <DependentUpon>CtrlParamDalay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ParamCtrls\CtrlParamDiff.resx">
+      <DependentUpon>CtrlParamDiff.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ParamCtrls\CtrlParamDs.resx">
+      <DependentUpon>CtrlParamDs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ParamCtrls\CtrlParamInteg.resx">
+      <DependentUpon>CtrlParamInteg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\const.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delay.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\diff.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\integ.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\linearity_const_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\linearity_dalay_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\linearity_diff_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\linearity_integ_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\linearity_const_normal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\linearity_dalay_normal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\linearity_diff_normal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\linearity_ds_normal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\linearity_integ_normal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\linearity_ds_icon.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

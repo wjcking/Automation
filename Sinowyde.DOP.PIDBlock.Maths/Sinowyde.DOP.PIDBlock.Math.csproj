@@ -1,0 +1,314 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{7DE52FB6-CD91-46F1-BAA4-A6A4CA7DFA76}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Sinowyde.DOP.PIDBlock.Math</RootNamespace>
+    <AssemblyName>Sinowyde.DOP.PIDBlock.Math</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\Sinowyde.ConsoleApplication\bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Data.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Printing.v15.2.Core, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Sparkline.v15.2.Core, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraBars.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPrinting.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="Northwoods.Go">
+      <HintPath>..\..\..\Common\ThirdParty\GoDiagram\Northwoods.Go.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.Composition" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Block\AbsBlock.cs" />
+    <Compile Include="Block\AddBlock.cs" />
+    <Compile Include="Block\AsinBlock.cs" />
+    <Compile Include="Block\DivBlock.cs" />
+    <Compile Include="Block\ExpBlock.cs" />
+    <Compile Include="Block\LogBlock.cs" />
+    <Compile Include="Block\MathsBlock.cs" />
+    <Compile Include="Block\MultBlock.cs" />
+    <Compile Include="Block\PowerBlock.cs" />
+    <Compile Include="Block\SinBlock.cs" />
+    <Compile Include="Block\SqrtBlock.cs" />
+    <Compile Include="Block\SubBlock.cs" />
+    <Compile Include="Common.cs" />
+    <Compile Include="ParamCtrls\CtrlParamAbs.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ParamCtrls\CtrlParamAbs.Designer.cs">
+      <DependentUpon>CtrlParamAbs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ParamCtrls\CtrlParamAdd.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ParamCtrls\CtrlParamAdd.Designer.cs">
+      <DependentUpon>CtrlParamAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ParamCtrls\CtrlParamAsin.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ParamCtrls\CtrlParamAsin.Designer.cs">
+      <DependentUpon>CtrlParamAsin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ParamCtrls\CtrlParamDiv.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ParamCtrls\CtrlParamDiv.Designer.cs">
+      <DependentUpon>CtrlParamDiv.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ParamCtrls\CtrlParamExp.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ParamCtrls\CtrlParamExp.Designer.cs">
+      <DependentUpon>CtrlParamExp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ParamCtrls\CtrlParamLog.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ParamCtrls\CtrlParamLog.Designer.cs">
+      <DependentUpon>CtrlParamLog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ParamCtrls\CtrlParamMaths.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ParamCtrls\CtrlParamMaths.Designer.cs">
+      <DependentUpon>CtrlParamMaths.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ParamCtrls\CtrlParamMult.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ParamCtrls\CtrlParamMult.Designer.cs">
+      <DependentUpon>CtrlParamMult.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ParamCtrls\CtrlParamPower.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ParamCtrls\CtrlParamPower.Designer.cs">
+      <DependentUpon>CtrlParamPower.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ParamCtrls\CtrlParamSin.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ParamCtrls\CtrlParamSin.Designer.cs">
+      <DependentUpon>CtrlParamSin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ParamCtrls\CtrlParamSqrt.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ParamCtrls\CtrlParamSqrt.Designer.cs">
+      <DependentUpon>CtrlParamSqrt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ParamCtrls\CtrlParamSub.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ParamCtrls\CtrlParamSub.Designer.cs">
+      <DependentUpon>CtrlParamSub.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Tools\AbsBlockTool.cs" />
+    <Compile Include="Tools\AddBlockTool.cs" />
+    <Compile Include="Tools\AsinBlockTool.cs" />
+    <Compile Include="Tools\DivBlockTool.cs" />
+    <Compile Include="Tools\ExpBlockTool.cs" />
+    <Compile Include="Tools\LogBlockTool.cs" />
+    <Compile Include="Tools\MathsBlockTool.cs" />
+    <Compile Include="Tools\MultBlockTool.cs" />
+    <Compile Include="Tools\PowerBlockTool.cs" />
+    <Compile Include="Tools\SinBlockTool.cs" />
+    <Compile Include="Tools\SqrtBlockTool.cs" />
+    <Compile Include="Tools\SubBlockTool.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Common\Solution\Sinowyde.Util\Sinowyde.Util.csproj">
+      <Project>{529550d8-4877-434a-83ce-4eeb1f6b1f9c}</Project>
+      <Name>Sinowyde.Util</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Sinowyde.DOP.PIDAlgorithm.Math\Sinowyde.DOP.PIDAlgorithm.Math.csproj">
+      <Project>{bb20c710-a278-46c3-9752-7037caba9005}</Project>
+      <Name>Sinowyde.DOP.PIDAlgorithm.Math</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Sinowyde.DOP.PIDAlgorithm\Sinowyde.DOP.PIDAlgorithm.csproj">
+      <Project>{d6326efc-eb44-4492-8ef7-7ae91768d78b}</Project>
+      <Name>Sinowyde.DOP.PIDAlgorithm</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Sinowyde.DOP.PIDBlock\Sinowyde.DOP.PIDBlock.csproj">
+      <Project>{5bd90716-dd9b-4ce6-8aff-22a51e71646a}</Project>
+      <Name>Sinowyde.DOP.PIDBlock</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ParamCtrls\CtrlParamAbs.resx">
+      <DependentUpon>CtrlParamAbs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ParamCtrls\CtrlParamAdd.resx">
+      <DependentUpon>CtrlParamAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ParamCtrls\CtrlParamAsin.resx">
+      <DependentUpon>CtrlParamAsin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ParamCtrls\CtrlParamDiv.resx">
+      <DependentUpon>CtrlParamDiv.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ParamCtrls\CtrlParamExp.resx">
+      <DependentUpon>CtrlParamExp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ParamCtrls\CtrlParamLog.resx">
+      <DependentUpon>CtrlParamLog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ParamCtrls\CtrlParamMaths.resx">
+      <DependentUpon>CtrlParamMaths.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ParamCtrls\CtrlParamMult.resx">
+      <DependentUpon>CtrlParamMult.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ParamCtrls\CtrlParamPower.resx">
+      <DependentUpon>CtrlParamPower.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ParamCtrls\CtrlParamSin.resx">
+      <DependentUpon>CtrlParamSin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ParamCtrls\CtrlParamSqrt.resx">
+      <DependentUpon>CtrlParamSqrt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ParamCtrls\CtrlParamSub.resx">
+      <DependentUpon>CtrlParamSub.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\math_sub_normal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\math_abs_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\math_abs_normal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\math_add_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\math_add_normal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\math_asin_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\math_asin_normal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\math_div_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\math_div_normal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\math_exp_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\math_exp_normal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\math_log_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\math_log_normal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\math_maths_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\math_maths_normal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\math_mult_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\math_mult_normal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\math_power_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\math_power_normal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\math_sin_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\math_sin_normal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\math_sqrt_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\math_sqrt_normal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\math_sub_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\math_tan_normal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\math_acos_normal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\math_atan_normal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\math_cos_normal.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

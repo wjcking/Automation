@@ -1,0 +1,508 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Sinowyde.DOP.GraphicElement.frmGraphLibs" Collapsed="true">
+    <Position X="24.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAQCCBAAAEBAACAAEACIAAAAAEAAUAAAAAAAhA=</HashCode>
+      <FileName>Common\frmGraphLibs.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Sinowyde.DOP.GraphicElement.frmOpenDialog" Collapsed="true">
+    <Position X="11.75" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABCQAACQgCAAAAEAIACgBEAKIAEBAABAAgAAAAAAAAA=</HashCode>
+      <FileName>Common\frmOpenDialog.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Sinowyde.DOP.GraphicElement.frmVariable" Collapsed="true">
+    <Position X="13.75" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQQEAKQCCAAQAEEMACAAIBG0AAAQBAAAoCAAEIAACA=</HashCode>
+      <FileName>Common\frmVariable.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Sinowyde.DOP.GraphicElement.ComboxData" Collapsed="true">
+    <Position X="13.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAGAAAAAA=</HashCode>
+      <FileName>Common\frmVariable.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Sinowyde.DOP.GraphicElement.UCtlBrushTool" Collapsed="true">
+    <Position X="20.75" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAKAQAAAAAECAEAACAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Common\UCtlBrushTool.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Sinowyde.DOP.GraphicElement.UCtlColor" Collapsed="true">
+    <Position X="24.25" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAECAAABAAAACAAAADACQAAACAAAAAgAAAAEA=</HashCode>
+      <FileName>Common\UCtlColor.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Sinowyde.DOP.GraphicElement.UCtlColorMul" Collapsed="true">
+    <Position X="12" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAACAAAACCAAgAAAACIAAACAQBAAgCAAAAAAIAAIAg=</HashCode>
+      <FileName>Common\UCtlColorMul.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Sinowyde.DOP.GraphicElement.UCtlGetVariable" Collapsed="true">
+    <Position X="15.5" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAQAAIAACQACAAAAACABCACsAAAAIAAAAAAAUCAIAA=</HashCode>
+      <FileName>Common\UCtlGetVariable.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Sinowyde.DOP.GraphicElement.UCtlHValueColor" Collapsed="true">
+    <Position X="20.75" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAIAAAQGEABAAAAACAAAACAAAAAADQAAAAAAABEAA=</HashCode>
+      <FileName>Common\UCtlHValueColor.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Sinowyde.DOP.GraphicElement.UCtlPIDAlgorithms" Collapsed="true">
+    <Position X="15.5" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BABAAAEAACQAAIAAgACACAACAQAAgAgAQIAAAEiAQEI=</HashCode>
+      <FileName>Common\UCtlPIDAlgorithms.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Sinowyde.DOP.GraphicElement.UCtlValueColor" Collapsed="true">
+    <Position X="20.75" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAAAIAAACAAQAAAAECAAAACACAAAAAAAAAAAIAAAAA=</HashCode>
+      <FileName>Common\UCtlValueColor.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Sinowyde.DOP.GraphicElement.DOPBar" Collapsed="true">
+    <Position X="17.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAABAAAAAAAAAAAABBAAAAAAAAAAAAAAAAIA=</HashCode>
+      <FileName>DOPFigures\DOPBar.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Sinowyde.DOP.GraphicElement.DOPBarMeter" Collapsed="true">
+    <Position X="19" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAEAAAAAABAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DOPFigures\DOPBarMeter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Sinowyde.DOP.GraphicElement.DOPButton" Collapsed="true">
+    <Position X="11" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAEAAAAAABAAAAAAAAAAAABAAAAAAAAAAgAAAAAAAA=</HashCode>
+      <FileName>DOPFigures\DOPButton.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Sinowyde.DOP.GraphicElement.DOPDialog" Collapsed="true">
+    <Position X="19" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAABIAACAAAAAACABAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DOPFigures\DOPDialog.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Sinowyde.DOP.GraphicElement.DOPGauge" Collapsed="true">
+    <Position X="13.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAABAAAAAAAAAAAABAAAAAAAAAAAAAIAAAAA=</HashCode>
+      <FileName>DOPFigures\DOPGauge.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Sinowyde.DOP.GraphicElement.DOPHotspot" Collapsed="true">
+    <Position X="17.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAABAAACAAAAAQCABAAAAAAAAAAgAAAAAAAA=</HashCode>
+      <FileName>DOPFigures\DOPHotspot.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Sinowyde.DOP.GraphicElement.DOPImageLibrary" Collapsed="true">
+    <Position X="15.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAABAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DOPFigures\DOPImageLibrary.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Sinowyde.DOP.GraphicElement.DOPTimer">
+    <Position X="20.75" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAEAAAAAABAAAAAAAAAAAABAAAAAAAIAAAAAAAAAAA=</HashCode>
+      <FileName>DOPFigures\DOPTimer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Sinowyde.DOP.GraphicElement.DOPBarMeterTool" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="20.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DOPFigureTool\DOPBarMeterTool.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Sinowyde.DOP.GraphicElement.DOPBarTool" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="22.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DOPFigureTool\DOPBarTool.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Sinowyde.DOP.GraphicElement.DOPButtonTool" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="9.25" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DOPFigureTool\DOPButtonTool.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Sinowyde.DOP.GraphicElement.DOPDialogTool" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="20.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DOPFigureTool\DOPDialogTool.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Sinowyde.DOP.GraphicElement.DOPGaugeTool" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="15.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DOPFigureTool\DOPGauge.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Sinowyde.DOP.GraphicElement.DOPHotspotTool" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="19" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DOPFigureTool\DOPHotspotTool.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Sinowyde.DOP.GraphicElement.DOPImageLibraryTool" Collapsed="true">
+    <Position X="13.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAAAABAAAgAAAAAAAAIAAAAAAAAAA=</HashCode>
+      <FileName>DOPFigureTool\DOPImageLibraryTool.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Sinowyde.DOP.GraphicElement.DOPArc">
+    <Position X="10" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAEAAAAAABAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DOPGraph\DOPArc.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Sinowyde.DOP.GraphicElement.DOPDrawing" Collapsed="true">
+    <Position X="22.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAEAAAAAABAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DOPGraph\DOPDrawing.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Sinowyde.DOP.GraphicElement.DOPEllipse" Collapsed="true">
+    <Position X="24.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAEAAAAAABAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DOPGraph\DOPEllipse.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Sinowyde.DOP.GraphicElement.DOPLine" Collapsed="true">
+    <Position X="17.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAEAAAAAABAgAAAAAAAAAABAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DOPGraph\DOPLine.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Sinowyde.DOP.GraphicElement.DOPPolygon">
+    <Position X="24.25" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAEAAAAAABAgAAAAAAAAAABAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DOPGraph\DOPPolygon.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Sinowyde.DOP.GraphicElement.DOPRectangle" Collapsed="true">
+    <Position X="24.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAEAAAAAABAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DOPGraph\DOPRectangle.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Sinowyde.DOP.GraphicElement.DOPRoundedRectangle" Collapsed="true">
+    <Position X="13.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAEAAAAAABAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DOPGraph\DOPRoundedRectangle.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Sinowyde.DOP.GraphicElement.DOPText" Collapsed="true">
+    <Position X="17.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAABAAAAAAAAAAAABAAQAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DOPGraph\DOPText.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Sinowyde.DOP.GraphicElement.DOPColorAnimation" Collapsed="true">
+    <Position X="7.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAABAAAAAAAAAAAAgAgAAAEAgAAAAAABAAQAAAQ=</HashCode>
+      <FileName>DOPGraphAnimation\DOPColorAnimation.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Sinowyde.DOP.GraphicElement.DOPFlashAnimation" Collapsed="true">
+    <Position X="2" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAABAAAAAAAAAAAAgAgAAAAAgAAAAAAAAAQAAAQ=</HashCode>
+      <FileName>DOPGraphAnimation\DOPFlashAnimation.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Sinowyde.DOP.GraphicElement.DOPGeneralAnimation">
+    <Position X="0.75" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DOPGraphAnimation\DOPGeneralAnimation.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Sinowyde.DOP.GraphicElement.DOPHideAnimation" Collapsed="true">
+    <Position X="4" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAABAAAAAAAAAAAAgAgAAAAAgAAAAAAAAAQAAAQ=</HashCode>
+      <FileName>DOPGraphAnimation\DOPHideAnimation.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Sinowyde.DOP.GraphicElement.DOPMoveAnimation" Collapsed="true">
+    <Position X="3.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAgAgAAAAAgAAAAAAAAAAAAAQ=</HashCode>
+      <FileName>DOPGraphAnimation\DOPMoveAnimation.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Sinowyde.DOP.GraphicElement.DOPTextAnimation" Collapsed="true">
+    <Position X="5.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAABAAAAAAAAAgACAAggAAAAwAAAAAAAAAAACAA=</HashCode>
+      <FileName>DOPGraphAnimation\DOPTextAnimation.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Sinowyde.DOP.GraphicElement.DOPArcFactory" BaseTypeListCollapsed="true">
+    <Position X="8.25" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DOPGraphFactory\DOPArcFactory.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Sinowyde.DOP.GraphicElement.DOPBlockArrowFactory" Collapsed="true">
+    <Position X="15.75" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQCAAgACABAQAJAAAAAgBAAIAAAQAIAAAAgAABAAAg=</HashCode>
+      <FileName>DOPGraphFactory\DOPBlockArrowFactory.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Sinowyde.DOP.GraphicElement.DOPEllipseFactory" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="17.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DOPGraphFactory\DOPEllipseFactory.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Sinowyde.DOP.GraphicElement.DOPRectangleFactory" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="11.75" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DOPGraphFactory\DOPRectangleFactory.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Sinowyde.DOP.GraphicElement.DOPRoundedRectangleFactory" BaseTypeListCollapsed="true">
+    <Position X="20.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DOPGraphFactory\DOPRoundedRectangleFactory.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Sinowyde.DOP.GraphicElement.DOPImageTool" Collapsed="true">
+    <Position X="15.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAAAABAAAAAAAAAAAAIAAAAAAAAAA=</HashCode>
+      <FileName>DOPGraphTool\DOPImageTool.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Sinowyde.DOP.GraphicElement.DOPLineTool" Collapsed="true">
+    <Position X="19" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAAAABAAAAAAAAAAEAAAAACAAAAAA=</HashCode>
+      <FileName>DOPGraphTool\DOPLineTool.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Sinowyde.DOP.GraphicElement.DOPPolygonTool" Collapsed="true">
+    <Position X="22.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAAAABAAAAAAAAAAEAAAAACAAAAAA=</HashCode>
+      <FileName>DOPGraphTool\DOPPolygonTool.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Sinowyde.DOP.GraphicElement.DOPTextTool" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="19" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DOPGraphTool\DOPTextTool.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Sinowyde.DOP.GraphicElement.frmViewDialog" Collapsed="true">
+    <Position X="15.5" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAEAAACCAAAAAAAACAAACCAAAAIAQAAQAAAAAAAAA=</HashCode>
+      <FileName>UserControl\frmViewDialog.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Sinowyde.DOP.GraphicElement.UCtlBarMeterParam" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="19" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIBgAkAAAiAQAAQhCAGABAADwY6EwAsAQAAAIQgCAAA=</HashCode>
+      <FileName>UserControl\UCtlBarMeterParam.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Sinowyde.DOP.GraphicElement.UCtlButtonParam" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="22.5" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>WYFgQMsUoCGADAGkASCCB4Sj4BqE/CtAZAhBAAAikgQ=</HashCode>
+      <FileName>UserControl\UCtlButtonParam.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Sinowyde.DOP.GraphicElement.UCtlDialogParam" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="13.75" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABgAMBUACCABACgAACABAAiYAIA8AsAAAgCIAACAAA=</HashCode>
+      <FileName>UserControl\UCtlDialogParam.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Sinowyde.DOP.GraphicElement.UCtlGraphParam" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="17.25" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>0LHARkoABKCASdkoIXmb74WfwHjE/ptebghBCww1lgM=</HashCode>
+      <FileName>UserControl\UCtlGraphParam.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Sinowyde.DOP.GraphicElement.UCtlHotspotParam" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="19" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABgAMBUACCABACkAACABACiIAIA8CsAAAgAAAACEAA=</HashCode>
+      <FileName>UserControl\UCtlHotspotParam.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Sinowyde.DOP.GraphicElement.UCtlImageButtonParam" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="22.75" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAJgQEAUACCAAACgAACCBAAjoBCAwCtAIABBIAACEAA=</HashCode>
+      <FileName>UserControl\UCtlImageButtonParam.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Sinowyde.DOP.GraphicElement.UCtlImageLibraryParam" BaseTypeListCollapsed="true">
+    <Position X="26" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABgAEAQCCCAAAAhAACABAACAAIAAAEAAAgAAAACABA=</HashCode>
+      <FileName>UserControl\UCtlImageLibraryParam.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Sinowyde.DOP.GraphicElement.UCtlImageParam" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="12" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ECDAQkAUBKCAScggIVmL5wGb4EDE5pNeKgABCwgVhAM=</HashCode>
+      <FileName>UserControl\UCtlImageParam.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Sinowyde.DOP.GraphicElement.UCtlMeterParam" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="13.75" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAJgAAAAACAADARhAAGABCECwD4A/AsAAAgAMYgCEAA=</HashCode>
+      <FileName>UserControl\UCtlMeterParam.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Sinowyde.DOP.GraphicElement.UCtlTextParam" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="17.25" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BChigFDBIKAAwIAwAACKVAAD0AZQVhsGQhgkIF1MECA=</HashCode>
+      <FileName>UserControl\UCtlTextParam.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Sinowyde.DOP.GraphicElement.UCtlTimeParam" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="19" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABgAEAQICAEAAAgAACABAACAIIAAAEAQAgAAAACAAA=</HashCode>
+      <FileName>UserControl\UCtlTimeParam.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Sinowyde.DOP.GraphicElement.DOPFigures.DOPImageButton" Collapsed="true">
+    <Position X="22.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAEAAAAAABAAAAAAAAAAAABAAAAAAAAAAgAAAAAAAA=</HashCode>
+      <FileName>DOPFigures\DOPImageButton.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Sinowyde.DOP.GraphicElement.DOPFigureTool.DOPImageButtonTool" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="24.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DOPFigureTool\DOPImageButtonTool.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Sinowyde.DOP.GraphicElement.DOPFigureTool.DOPTimerTool" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="22.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DOPFigureTool\DOPTimerTool.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Sinowyde.DOP.GraphicElement.DOPGraph.DOPBlockArrow" Collapsed="true">
+    <Position X="24.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAEAAAAAABAgAAAAAAAAAABAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DOPGraph\DOPBlockArrow.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Sinowyde.DOP.GraphicElement.DOPGraphFactory.DOPBlockArrowTool" BaseTypeListCollapsed="true">
+    <Position X="14" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DOPGraphFactory\DOPBlockArrowTool.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Sinowyde.DOP.GraphicElement.Properties.Resources" Collapsed="true">
+    <Position X="17.25" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABEAAAAQAAAAAAAAAAAAAAAIA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="Sinowyde.DOP.GraphicElement.Base.IGraphFactory">
+    <Position X="9.75" Y="0.75" Width="1.5" />
+    <TypeIdentifier />
+  </Interface>
+  <Enum Name="Sinowyde.DOP.GraphicElement.ColorType" Collapsed="true">
+    <Position X="12" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAIAAAAAABACAAAAAAAAAQAAAAAAAE=</HashCode>
+      <FileName>DOPGraphAnimation\DOPGeneralAnimation.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Microsoft YaHei" Size="9" />
+</ClassDiagram>

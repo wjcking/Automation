@@ -1,0 +1,21 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="Sinowyde.DOP.IO.Server.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="Topic" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">IOServer</Value>
+    </Setting>
+    <Setting Name="PubTopic" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">IOCommand</Value>
+    </Setting>
+    <Setting Name="IOServerName" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">IOServer</Value>
+    </Setting>
+    <Setting Name="Broker" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">tcp://192.168.254.189:9001</Value>
+    </Setting>
+    <Setting Name="Publish" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">tcp://192.168.254.189:9003</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

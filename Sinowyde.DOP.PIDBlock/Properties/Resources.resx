@@ -1,0 +1,490 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="defaultIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\defaultIcon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Math_EXP_Normal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Math_EXP_Normal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Math_ABS_Normal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Math_ABS_Normal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Math_ADD_Normal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Math_ADD_Normal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Math_ASIN_Normal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Math_ASIN_Normal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Math_DIV_Normal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Math_DIV_Normal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Math_LOG_Normal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Math_LOG_Normal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Math_MATHS_Normal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Math_MATHS_Normal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Math_MULT_Normal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Math_MULT_Normal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Math_POWER_Normal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Math_POWER_Normal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Math_SIN_Normal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Math_SIN_Normal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Math_SQRT_Normal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Math_SQRT_Normal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Math_SUB_Normal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Math_SUB_Normal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="NonLineArity_DEAD_Normal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\NonLineArity_DEAD_Normal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="NonLineArity_GEARBL_Normal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\NonLineArity_GEARBL_Normal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="NonLineArity_HYLOOP_Normal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\NonLineArity_HYLOOP_Normal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="NonLineArity_MAGAMP_Normal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\NonLineArity_MAGAMP_Normal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="NonLineArity_RANGE_Normal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\NonLineArity_RANGE_Normal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="NonLineArity_RATIO_Normal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\NonLineArity_RATIO_Normal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="NonLineArity_SWITCH_Normal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\NonLineArity_SWITCH_Normal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="NonLineArity_RANGEALM_Normal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\NonLineArity_RANGEALM_Normal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="NonLineArity_VA_Normal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\NonLineArity_VA_Normal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="choice_dg_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\choice_dg_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="choice_disel_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\choice_disel_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="choice_dosel_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\choice_dosel_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="choice_insel_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\choice_insel_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="choice_max_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\choice_max_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="choice_med_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\choice_med_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="choice_min_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\choice_min_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="choice_opsel_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\choice_opsel_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="control_2ib_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\control_2ib_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="control_2si_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\control_2si_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="control_3si_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\control_3si_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="control_8ib_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\control_8ib_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="control_ams_ex_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\control_ams-ex_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="control_ams_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\control_ams_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="control_aset_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\control_aset_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="control_dms_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\control_dms_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="control_dset_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\control_dset_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="control_dv_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\control_dv_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="control_leadleg_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\control_leadleg_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="control_pid_ex_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\control_pid-ex_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="control_pid_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\control_pid_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="control_snc_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\control_snc_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="control_stepcontrol_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\control_stepcontrol_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="io_amop_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\io_amop_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="io_anin_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\io_anin_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="io_anop_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\io_anop_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="io_dgin_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\io_dgin_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="io_dgop_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\io_dgop_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="io_dmop_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\io_dmop_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="io_logicrai_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\io_logicrai_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="io_logicrao_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\io_logicrao_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="io_logicri_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\io_logicri_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="io_logicro_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\io_logicro_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="io_netai_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\io_netai_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="io_netaq_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\io_netaq_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="io_netdi_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\io_netdi_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="io_netdo_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\io_netdo_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="io_pageai_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\io_pageai_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="io_pageao_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\io_pageao_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="io_pagedi_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\io_pagedi_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="io_pagedo_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\io_pagedo_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="io_tmop_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\io_tmop_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="linearity_const_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\linearity_const_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="linearity_ctf1_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\linearity_ctf1_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="linearity_ctf2_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\linearity_ctf2_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="linearity_dalay_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\linearity_dalay_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="linearity_diff_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\linearity_diff_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="linearity_ds_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\linearity_ds_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="linearity_dtf_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\linearity_dtf_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="linearity_integ_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\linearity_integ_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="logic_alm_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\logic_alm_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="logic_and_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\logic_and_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="logic_comp_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\logic_comp_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="logic_count_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\logic_count_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="logic_dpqc_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\logic_dpqc_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="logic_dtrig_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\logic_dtrig_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="logic_first_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\logic_first_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="logic_not_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\logic_not_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="logic_or_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\logic_or_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="logic_rstrig_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\logic_rstrig_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="logic_sign_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\logic_sign_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="logic_xor_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\logic_xor_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="math_abs_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\math_abs_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="math_add_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\math_add_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="math_asin_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\math_asin_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="math_div_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\math_div_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="math_exp_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\math_exp_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="math_log_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\math_log_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="math_maths_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\math_maths_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="math_mult_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\math_mult_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="math_power_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\math_power_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="math_sin_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\math_sin_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="math_sqrt_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\math_sqrt_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="math_sub_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\math_sub_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="nonlinearity_dead_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\nonlinearity_dead_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="nonlinearity_gearbl_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\nonlinearity_gearbl_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="nonlinearity_hyloop_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\nonlinearity_hyloop_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="nonlinearity_line_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\nonlinearity_line_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="nonlinearity_magamp_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\nonlinearity_magamp_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="nonlinearity_rangealm_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\nonlinearity_rangealm_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="nonlinearity_range_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\nonlinearity_range_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="nonlinearity_ratioalm_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\nonlinearity_ratioalm_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="nonlinearity_ratio_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\nonlinearity_ratio_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="nonlinearity_switch_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\nonlinearity_switch_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="source_broken_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\source_broken_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="source_msquare_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\source_msquare_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="source_ramp_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\source_ramp_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="source_random_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\source_random_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="source_sawtooth_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\source_sawtooth_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="source_sinsig_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\source_sinsig_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="source_square_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\source_square_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="source_step_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\source_step_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="time_ct_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\time_ct_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="time_delayoff_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\time_delayoff_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="time_delayon_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\time_delayon_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="time_sct2_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\time_sct2_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="time_sct_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\time_sct_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="time_singlepulse_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\time_singlepulse_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="time_total_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\time_total_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="time_t_ex_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\time_t-ex_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="time_t_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\time_t_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+</root>

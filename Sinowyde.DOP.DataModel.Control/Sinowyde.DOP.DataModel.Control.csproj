@@ -1,0 +1,273 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{7C2D4C81-4860-4A16-B6A5-CF46B135A22B}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Sinowyde.DOP.DataModel.Control</RootNamespace>
+    <AssemblyName>Sinowyde.DOP.DataModel.Control</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\..\..\..\DataModelControl\DMC\</SolutionDir>
+    <RestorePackages>true</RestorePackages>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\Sinowyde.ConsoleApplication\bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Data.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.Printing.v15.2.Core, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.Utils.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.XtraBars.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.XtraEditors.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.XtraGrid.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.XtraLayout.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.XtraNavBar.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.XtraPrinting.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.XtraTreeList.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.XtraVerticalGrid.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="ICSharpCode.SharpZipLib, Version=0.86.0.518, Culture=neutral, PublicKeyToken=1b03e6acf1164f73, processorArchitecture=MSIL">
+      <HintPath>..\packages\NPOI.2.1.3.1\lib\net40\ICSharpCode.SharpZipLib.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="NPOI, Version=2.1.3.1, Culture=neutral, PublicKeyToken=0df73ec7942b34e1, processorArchitecture=MSIL">
+      <HintPath>..\packages\NPOI.2.1.3.1\lib\net40\NPOI.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="NPOI.OOXML, Version=2.1.3.1, Culture=neutral, PublicKeyToken=0df73ec7942b34e1, processorArchitecture=MSIL">
+      <HintPath>..\packages\NPOI.2.1.3.1\lib\net40\NPOI.OOXML.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="NPOI.OpenXml4Net, Version=2.1.3.1, Culture=neutral, PublicKeyToken=0df73ec7942b34e1, processorArchitecture=MSIL">
+      <HintPath>..\packages\NPOI.2.1.3.1\lib\net40\NPOI.OpenXml4Net.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="NPOI.OpenXmlFormats, Version=2.1.3.1, Culture=neutral, PublicKeyToken=0df73ec7942b34e1, processorArchitecture=MSIL">
+      <HintPath>..\packages\NPOI.2.1.3.1\lib\net40\NPOI.OpenXmlFormats.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.Composition" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Common.cs" />
+    <Compile Include="ExportHelper.cs" />
+    <Compile Include="Frms\Form_Alarmrule.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frms\Form_Alarmrule.Designer.cs">
+      <DependentUpon>Form_Alarmrule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frms\Form_CalcVariabel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frms\Form_CalcVariabel.Designer.cs">
+      <DependentUpon>Form_CalcVariabel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frms\Form_Device.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frms\Form_Device.Designer.cs">
+      <DependentUpon>Form_Device.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frms\Form_IOChannel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frms\Form_IOChannel.Designer.cs">
+      <DependentUpon>Form_IOChannel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frms\Form_IOUnit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frms\Form_IOUnit.Designer.cs">
+      <DependentUpon>Form_IOUnit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frms\Form_ServiceCfg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frms\Form_ServiceCfg.Designer.cs">
+      <DependentUpon>Form_ServiceCfg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frms\Form_Variable.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frms\Form_Variable.Designer.cs">
+      <DependentUpon>Form_Variable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frms\Form_VariableSelect.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frms\Form_VariableSelect.Designer.cs">
+      <DependentUpon>Form_VariableSelect.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frms\From_IOServer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frms\From_IOServer.Designer.cs">
+      <DependentUpon>From_IOServer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frms\From_TempVariable.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frms\From_TempVariable.Designer.cs">
+      <DependentUpon>From_TempVariable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frms\LoadingControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Frms\LoadingControl.Designer.cs">
+      <DependentUpon>LoadingControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControlDataModel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControlDataModel.Designer.cs">
+      <DependentUpon>UserControlDataModel.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Common\Solution\Sinowyde.DataLogic\Sinowyde.DataLogic.csproj">
+      <Project>{b6d22f2a-e93c-4042-9636-c23524111452}</Project>
+      <Name>Sinowyde.DataLogic</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Common\Solution\Sinowyde.DataModel\Sinowyde.DataModel.csproj">
+      <Project>{aa3d8e8d-312a-4075-89cb-09822e75f75f}</Project>
+      <Name>Sinowyde.DataModel</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Common\Solution\Sinowyde.RtModel\Sinowyde.RTModel.csproj">
+      <Project>{770f76df-a232-40ce-9353-ddbd67669d3e}</Project>
+      <Name>Sinowyde.RTModel</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Common\Solution\Sinowyde.Util\Sinowyde.Util.csproj">
+      <Project>{529550d8-4877-434a-83ce-4eeb1f6b1f9c}</Project>
+      <Name>Sinowyde.Util</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Sinowyde.DOP.DataLogic\Sinowyde.DOP.DataLogic.csproj">
+      <Project>{cc5aa595-01e0-485a-8d88-541c30755680}</Project>
+      <Name>Sinowyde.DOP.DataLogic</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Sinowyde.DOP.DataModel\Sinowyde.DOP.DataModel.csproj">
+      <Project>{433defaa-990d-470d-9751-959d594b5338}</Project>
+      <Name>Sinowyde.DOP.DataModel</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Sinowyde.DOP.UI\Sinowyde.DOP.UI.csproj">
+      <Project>{6f8df2ba-7bb4-4a6d-8fb3-7140712f938e}</Project>
+      <Name>Sinowyde.DOP.UI</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Frms\Form_Alarmrule.resx">
+      <DependentUpon>Form_Alarmrule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frms\Form_CalcVariabel.resx">
+      <DependentUpon>Form_CalcVariabel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frms\Form_Device.resx">
+      <DependentUpon>Form_Device.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frms\Form_IOChannel.resx">
+      <DependentUpon>Form_IOChannel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frms\Form_IOUnit.resx">
+      <DependentUpon>Form_IOUnit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frms\Form_ServiceCfg.resx">
+      <DependentUpon>Form_ServiceCfg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frms\Form_Variable.resx">
+      <DependentUpon>Form_Variable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frms\Form_VariableSelect.resx">
+      <DependentUpon>Form_VariableSelect.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frms\From_IOServer.resx">
+      <DependentUpon>From_IOServer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frms\From_TempVariable.resx">
+      <DependentUpon>From_TempVariable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frms\LoadingControl.resx">
+      <DependentUpon>LoadingControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControlDataModel.resx">
+      <DependentUpon>UserControlDataModel.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <None Include="Properties\DataSources\TreeData.datasource" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Fields.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

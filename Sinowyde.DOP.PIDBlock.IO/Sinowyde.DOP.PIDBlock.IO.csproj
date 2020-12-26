@@ -1,0 +1,317 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E42948E9-1015-424C-A35D-711FD637D8E7}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Sinowyde.DOP.PIDBlock.IO</RootNamespace>
+    <AssemblyName>Sinowyde.DOP.PIDBlock.IO</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\Sinowyde.ConsoleApplication\bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Data.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Printing.v15.2.Core, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGrid.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPrinting.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="Northwoods.Go">
+      <HintPath>..\..\..\Common\ThirdParty\GoDiagram\Northwoods.Go.dll</HintPath>
+    </Reference>
+    <Reference Include="Northwoods.Go.Draw">
+      <HintPath>..\..\..\Common\ThirdParty\GoDiagram\Northwoods.Go.Draw.dll</HintPath>
+    </Reference>
+    <Reference Include="Northwoods.Go.Layout">
+      <HintPath>..\..\..\Common\ThirdParty\GoDiagram\Northwoods.Go.Layout.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.Composition" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Blocks\AIBlock.cs" />
+    <Compile Include="Blocks\AMBlock.cs" />
+    <Compile Include="Blocks\AOBlock.cs" />
+    <Compile Include="Blocks\DIBlock.cs" />
+    <Compile Include="Blocks\DMBlock.cs" />
+    <Compile Include="Blocks\DOBlock.cs" />
+    <Compile Include="Blocks\IOBlock.cs" />
+    <Compile Include="Blocks\PAIBlock.cs" />
+    <Compile Include="Blocks\PAOBlock.cs" />
+    <Compile Include="Blocks\PDIBlock.cs" />
+    <Compile Include="Blocks\PDOBlock.cs" />
+    <Compile Include="FrmGotoUsages.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmGotoUsages.Designer.cs">
+      <DependentUpon>FrmGotoUsages.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PageBlockRelation.cs" />
+    <Compile Include="ParamCtrls\CtrlParamAI.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ParamCtrls\CtrlParamAI.designer.cs">
+      <DependentUpon>CtrlParamAI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ParamCtrls\CtrlParamAM.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ParamCtrls\CtrlParamAM.Designer.cs">
+      <DependentUpon>CtrlParamAM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ParamCtrls\CtrlParamAO.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ParamCtrls\CtrlParamAO.designer.cs">
+      <DependentUpon>CtrlParamAO.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ParamCtrls\CtrlParamDI.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ParamCtrls\CtrlParamDI.designer.cs">
+      <DependentUpon>CtrlParamDI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ParamCtrls\CtrlParamDM.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ParamCtrls\CtrlParamDM.designer.cs">
+      <DependentUpon>CtrlParamDM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ParamCtrls\CtrlParamDO.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ParamCtrls\CtrlParamDO.designer.cs">
+      <DependentUpon>CtrlParamDO.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ParamCtrls\CtrlParamPAI.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ParamCtrls\CtrlParamPAI.Designer.cs">
+      <DependentUpon>CtrlParamPAI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ParamCtrls\CtrlParamPAO.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ParamCtrls\CtrlParamPAO.Designer.cs">
+      <DependentUpon>CtrlParamPAO.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ParamCtrls\CtrlParamPDI.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ParamCtrls\CtrlParamPDI.Designer.cs">
+      <DependentUpon>CtrlParamPDI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ParamCtrls\CtrlParamPDO.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ParamCtrls\CtrlParamPDO.Designer.cs">
+      <DependentUpon>CtrlParamPDO.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Tools\AIBlockTools.cs" />
+    <Compile Include="Tools\AMBlockTools.cs" />
+    <Compile Include="Tools\AOBlockTools.cs" />
+    <Compile Include="Tools\DIBlockTools.cs" />
+    <Compile Include="Tools\DMBlockTools.cs" />
+    <Compile Include="Tools\DOBlockTools.cs" />
+    <Compile Include="Tools\PAIBlockTools.cs" />
+    <Compile Include="Tools\PAOBlockTools.cs" />
+    <Compile Include="Tools\PDIBlockTools.cs" />
+    <Compile Include="Tools\PDOBlockTools.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Common\Solution\Sinowyde.DataLogic\Sinowyde.DataLogic.csproj">
+      <Project>{b6d22f2a-e93c-4042-9636-c23524111452}</Project>
+      <Name>Sinowyde.DataLogic</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Common\Solution\Sinowyde.DataModel\Sinowyde.DataModel.csproj">
+      <Project>{aa3d8e8d-312a-4075-89cb-09822e75f75f}</Project>
+      <Name>Sinowyde.DataModel</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Common\Solution\Sinowyde.Util\Sinowyde.Util.csproj">
+      <Project>{529550d8-4877-434a-83ce-4eeb1f6b1f9c}</Project>
+      <Name>Sinowyde.Util</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Sinowyde.DOP.DataLogic\Sinowyde.DOP.DataLogic.csproj">
+      <Project>{cc5aa595-01e0-485a-8d88-541c30755680}</Project>
+      <Name>Sinowyde.DOP.DataLogic</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Sinowyde.DOP.DataModel\Sinowyde.DOP.DataModel.csproj">
+      <Project>{433defaa-990d-470d-9751-959d594b5338}</Project>
+      <Name>Sinowyde.DOP.DataModel</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Sinowyde.DOP.PIDAlgorithm.IO\Sinowyde.DOP.PIDAlgorithm.IO.csproj">
+      <Project>{5972a63e-7a10-4c0e-8c51-479dfac93c3a}</Project>
+      <Name>Sinowyde.DOP.PIDAlgorithm.IO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Sinowyde.DOP.PIDAlgorithm\Sinowyde.DOP.PIDAlgorithm.csproj">
+      <Project>{d6326efc-eb44-4492-8ef7-7ae91768d78b}</Project>
+      <Name>Sinowyde.DOP.PIDAlgorithm</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Sinowyde.DOP.PIDBlock.UserCtrl\Sinowyde.DOP.PIDBlock.UserCtrl.csproj">
+      <Project>{42d59eee-9f04-423a-881f-a33b78762629}</Project>
+      <Name>Sinowyde.DOP.PIDBlock.UserCtrl</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Sinowyde.DOP.PIDBlock\Sinowyde.DOP.PIDBlock.csproj">
+      <Project>{5bd90716-dd9b-4ce6-8aff-22a51e71646a}</Project>
+      <Name>Sinowyde.DOP.PIDBlock</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="FrmGotoUsages.resx">
+      <DependentUpon>FrmGotoUsages.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ParamCtrls\CtrlParamAI.resx">
+      <DependentUpon>CtrlParamAI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ParamCtrls\CtrlParamAM.resx">
+      <DependentUpon>CtrlParamAM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ParamCtrls\CtrlParamAO.resx">
+      <DependentUpon>CtrlParamAO.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ParamCtrls\CtrlParamDI.resx">
+      <DependentUpon>CtrlParamDI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ParamCtrls\CtrlParamDM.resx">
+      <DependentUpon>CtrlParamDM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ParamCtrls\CtrlParamDO.resx">
+      <DependentUpon>CtrlParamDO.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ParamCtrls\CtrlParamPAI.resx">
+      <DependentUpon>CtrlParamPAI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ParamCtrls\CtrlParamPAO.resx">
+      <DependentUpon>CtrlParamPAO.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ParamCtrls\CtrlParamPDI.resx">
+      <DependentUpon>CtrlParamPDI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ParamCtrls\CtrlParamPDO.resx">
+      <DependentUpon>CtrlParamPDO.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\io_tmop_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\io_amop_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\io_anin_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\io_anop_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\io_dgin_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\io_dgop_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\io_dmop_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\io_logicrai_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\io_logicrao_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\io_logicri_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\io_logicro_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\io_netai_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\io_netaq_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\io_netdi_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\io_netdo_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\io_pageai_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\io_pageao_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\io_pagedi_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\io_pagedo_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IO_ANIN_Normal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IO_AMOP_Normal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IO_DMOP_Normal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IO_DGIN_Normal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IO_ANOP_Normal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IO_DGOP_Normal.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
